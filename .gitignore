@@ -1,0 +1,22 @@
+# Entornos virtuales de Python
+venv/
+env/
+.env
+
+# Archivos de cache de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignorar archivos dentro de datos por seguridad (ODS y privacidad)
+# Mantenemos las carpetas usando un archivo .gitkeep
+datos/imagenes_ocr/*
+!datos/imagenes_ocr/.gitkeep
+datos/faq_chatbot/*
+!datos/faq_chatbot/.gitkeep
+
+# IDEs y SO
+.vscode/
+.idea/
+.DS_Store
