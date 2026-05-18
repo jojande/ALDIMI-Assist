@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+psycopg2-binary
+opencv-python
+pytesseract
+langchain
+langchain-openai
+langchain-community
+langchain-core
+openai
+python-multipart
+python-dotenv

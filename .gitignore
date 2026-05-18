@@ -16,6 +16,9 @@ datos/imagenes_ocr/*
 datos/faq_chatbot/*
 !datos/faq_chatbot/.gitkeep
 
+# Datos de carga
+data/
+
 # IDEs y SO
 .vscode/
 .idea/

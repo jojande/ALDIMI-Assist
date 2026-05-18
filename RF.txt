@@ -1,0 +1,60 @@
+Requisitos Funcionales del Frontend (Interfaz de Usuario)
+RF-FE-01: Carga de documentos. La interfaz gráfica (GUI) debe permitir al
+usuario (voluntario del albergue) cargar imágenes de documentos, tales 
+como DNI, recetas médicas o boletas de donación.  
+RF-FE-02: Visualización de resultados de OCR. La interfaz debe permitir 
+visualizar en pantalla el texto que el sistema ha extraído de la imagen 
+cargada.  
+RF-FE-03: Interfaz de asistente virtual. El sistema debe 
+proveer una interfaz amigable que permita a los voluntarios interactuar 
+mediante lenguaje natural para consultar protocolos y a 
+los padres de familia recibir orientación. 
+RF-FE-04: Simulación de flujo completo 
+(Hito Final). La interfaz debe soportar un flujo completo demostrable 
+desde que un voluntario carga un documento hasta que el asistente le 
+brinda soporte. 
+
+Requisitos Funcionales del Backend (API y Lógica de Integración)
+RF-BE-01: Consumo de servicios de IA. El backend debe encargarse de 
+consumir los servicios cognitivos (ya sean propios o de terceros, como 
+Azure, AWS o modelos Open Source) para procesar las peticiones del 
+frontend.
+RF-BE-02: Almacenamiento de datos extraídos. 
+El sistema debe guardar los datos extraídos por el módulo de visión 
+en una base de datos común. 
+RF-BE-03: Exposición de API para Machine Learning.
+El backend debe exponer un Endpoint (API) para que los datos capturados
+por la Inteligencia Artificial puedan ser consumidos por los modelos 
+predictivos desarrollados por el equipo de Machine Learning.  
+RF-BE-04: Integración del Ecosistema. La arquitectura debe permitir la
+confluencia final de los datos extraídos con el Dashboard o modelos del
+curso de Machine Learning para el sistema "ALDIMI Core AI".
+
+Requisitos Funcionales de ia_models (Modelos de Inteligencia Artificial)
+Módulo de Visión Artificial (OCR y Clasificación)
+RF-IAV-01: Extracción de texto (OCR). El módulo debe ser capaz de extraer
+el texto contenido en imágenes de documentos críticos de ALDIMI 
+(DNI, recetas médicas, boletas).  
+RF-IAV-02: Clasificación de documentos. El sistema debe clasificar 
+automáticamente el tipo de documento que se ha cargado (por ejemplo, 
+distinguir si la imagen es un DNI o una receta médica) utilizando 
+redes neuronales o técnicas de matching de patrones. 
+RF-IAV-03: Robustez ante baja calidad. El módulo OCR debe contar con 
+refinamientos que le permitan ser robusto y procesar imágenes que 
+tengan baja calidad.  
+Módulo de Procesamiento de Lenguaje Natural (NLP)
+RF-IAN-01: Respuestas a preguntas frecuentes (FAQs). El prototipo 
+del chatbot debe ser capaz de responder consultas sobre el reglamento 
+interno del albergue y las guías de cuidado del paciente.  
+RF-IAN-02: Representación del conocimiento. El agente conversacional 
+debe utilizar búsqueda semántica o representación del conocimiento 
+(mediante Ontologías o Grafos) para estructurar y formular sus
+respuestas.  
+RF-IAN-03: Manejo de contexto. El módulo de lenguaje natural
+debe ser capaz de mantener y manejar el contexto a lo largo de
+las conversaciones con los usuarios.  
+RF-IAN-04: Análisis de riesgo
+psicosocial. El sistema debe realizar un análisis de sentimiento o
+detección de palabras clave en los reportes de "observaciones diarias" 
+(evolución del niño) para identificar alertas tempranas de riesgos.  
+

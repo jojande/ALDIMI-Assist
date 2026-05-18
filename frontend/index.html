@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALDIMI Core AI - Panel de Control</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ALDIMI Core AI</h1>
+        <p>Sistema de Gestión con IA para el Albergue</p>
+    </header>
+
+    <main class="container">
+        <!-- Sección OCR -->
+        <section id="ocr-section" class="card">
+            <h2>Módulo de Visión (OCR)</h2>
+            <div class="upload-area">
+                <input type="file" id="fileInput" accept="image/*">
+                <button onclick="uploadDocument()" id="uploadBtn">Cargar y Procesar</button>
+            </div>
+            <div id="ocr-result" class="result-area" style="display: none;">
+                <h3>Resultado del Procesamiento</h3>
+                <p><strong>Tipo de Documento:</strong> <span id="docType"></span></p>
+                <div class="text-box">
+                    <strong>Texto Extraído:</strong>
+                    <pre id="extractedText"></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Chatbot -->
+        <section id="chatbot-section" class="card">
+            <h2>Asistente Virtual ALDIMI</h2>
+            <div id="chat-window" class="chat-window">
+                <!-- Los mensajes aparecerán aquí -->
+                <div class="message bot">¡Hola! Soy el asistente de ALDIMI. ¿En qué puedo ayudarte hoy?</div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chatInput" placeholder="Escribe tu consulta o reporte aquí...">
+                <button onclick="sendMessage()">Enviar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ALDIMI Core AI - Inteligencia Artificial para el Impacto Social</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
