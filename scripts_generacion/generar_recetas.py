@@ -110,10 +110,10 @@ def generar_receta_detallada(nombre_archivo, correlativo, nombre_paciente, edad_
     doctor = random.choice(doctores)
 
     # Posicionar texto encima de las líneas dibujadas
-    draw.text((130, 158), nombre_paciente, fill="darkblue", font=font_datos)
-    draw.text((500, 158), edad_paciente, fill="darkblue", font=font_datos)
-    draw.text((110, 198), fecha, fill="darkblue", font=font_datos)
-    draw.text((150, 238), diagnostico, fill="darkblue", font=font_datos)
+    draw.text((130, 160), nombre_paciente, fill="darkblue", font=font_datos)
+    draw.text((500, 160), edad_paciente, fill="darkblue", font=font_datos)
+    draw.text((110, 200), fecha, fill="darkblue", font=font_datos)
+    draw.text((150, 240), diagnostico, fill="darkblue", font=font_datos)
 
     # Insertar medicamentos en las líneas
     num_meds = random.randint(1, 4)

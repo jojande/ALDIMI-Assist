@@ -320,15 +320,48 @@ class ALDIMIOcrPipeline:
                     break
                     
         # DNI/RUC
-        match_ruc = re.search(r'\b\d{8,11}\b', text_j)
-        if match_ruc:
-            data["dni_ruc"] = match_ruc.group(0)
+        dni_ruc_val = ""
+        for i, line in enumerate(raw_lines):
+            l_u = line.upper()
+            if "DNI" in l_u or "RUC" in l_u:
+                if "ALBERGUE" not in l_u and "20508493021" not in l_u:
+                    if i < 6 and "20508493021" in text_j:
+                        continue
+                    match = re.search(r'\b\d{8,11}\b', l_u)
+                    if match and match.group(0) != "20508493021":
+                        dni_ruc_val = match.group(0)
+                        break
+                    elif i + 1 < len(raw_lines):
+                        match_next = re.search(r'\b\d{8,11}\b', raw_lines[i+1])
+                        if match_next and match_next.group(0) != "20508493021":
+                            dni_ruc_val = match_next.group(0)
+                            break
+        if not dni_ruc_val:
+            for m in re.finditer(r'\b\d{8,11}\b', text_j):
+                num = m.group(0)
+                if num != "20508493021":
+                    dni_ruc_val = num
+                    break
+        data["dni_ruc"] = dni_ruc_val
             
         # Donante
         for i, line in enumerate(raw_lines):
-            if "NOMBRE" in line.upper() or "RAZ" in line.upper() or "SOCIAL" in line.upper():
-                if i + 1 < len(raw_lines):
-                    data["donante"] = raw_lines[i+1].strip()
+            line_u = line.upper()
+            if "NOMBRE" in line_u or "RAZ" in line_u or "SOCIAL" in line_u:
+                donante_val = re.sub(r'(?i)(nombre/razón social|nombre/razon social|nombre|razón social|razon social)\s*:?\s*', '', line).strip()
+                if not donante_val and i + 1 < len(raw_lines):
+                    donante_val = raw_lines[i+1].strip()
+                donante_val = re.split(r'(?i)\s+(dirección|direccion|direccin|dni|ruc)', donante_val)[0].strip()
+                donante_val = re.sub(r'^[\s_\-\.\,:]+|[\s_\-\.\,:]+$', '', donante_val).strip()
+                if "DIRECCION" not in donante_val.upper() and "DIRECCIÓN" not in donante_val.upper() and "DIRECCIN" not in donante_val.upper():
+                    data["donante"] = donante_val
+                    break
+        
+        if not data["donante"]:
+            for line in raw_lines:
+                line_clean = re.sub(r'[^A-ZÁÉÍÓÚÑ\s]', '', line.upper()).strip()
+                if len(line_clean) > 8 and not any(kw in line_clean for kw in ["ALBERGUE", "DIVINA", "MISERICORDIA", "RUC", "LIMA", "PERU", "PERÚ", "DONACION", "DONACIÓN", "INFORMACION", "INFORMACIÓN", "DONANTE", "FECHA", "DIRECCION", "DIRECCIÓN", "DETALLES", "SUMINISTROS", "CANTIDAD", "VALORACION", "VALORACIÓN", "ESTIMADA", "METODO", "MÉTODO", "EFECTIVO", "TRANSFERENCIA", "FIRMA", "RECIBIDO"]):
+                    data["donante"] = line.strip()
                     break
                     
         # Valoración
@@ -376,7 +409,18 @@ class ALDIMIOcrPipeline:
                         if num not in ["2024", "2025", "2026", "2027"]:
                             data["valoracion"] = num
                             break
-                        
+
+        # Normalize valuation format
+        val_str = data["valoracion"]
+        if val_str:
+            val_str = re.sub(r'[^\d\.,]', '', val_str)
+            if '.' not in val_str and ',' not in val_str:
+                if len(val_str) >= 4 and val_str.endswith('00'):
+                    val_str = val_str[:-2] + '.' + val_str[-2:]
+                else:
+                    val_str = val_str + '.00'
+            data["valoracion"] = val_str
+            
         return data
 
 

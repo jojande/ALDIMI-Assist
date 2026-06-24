@@ -24,7 +24,7 @@ def crear_recibo_detallado(nombre_archivo, correlativo, nombre_donante, dni_dona
     font_titulo = get_windows_font("arialbd.ttf", 18)
     font_sub = get_windows_font("arialbd.ttf", 16)
     font_texto = get_windows_font("arial.ttf", 14)
-    font_mano = get_windows_font("courier.ttf", 16)
+    font_mano = get_windows_font("arialbd.ttf", 16)
 
     # --- ESTRUCTURA VISUAL ---
     draw.rectangle([15, 15, 585, 835], outline="black", width=2)
@@ -60,10 +60,10 @@ def crear_recibo_detallado(nombre_archivo, correlativo, nombre_donante, dni_dona
 
     # --- LLENADO DINÁMICO ---
     fecha = f"{random.randint(1,28):02d}/05/2026"
-    draw.text((190, 165), fecha, font=font_mano, fill="blue")
-    draw.text((190, 205), nombre_donante, font=font_mano, fill="blue")
-    draw.text((190, 245), random.choice(direcciones), font=font_mano, fill="blue")
-    draw.text((190, 285), dni_donante, font=font_mano, fill="blue")
+    draw.text((190, 170), fecha, font=font_mano, fill="blue")
+    draw.text((190, 210), nombre_donante, font=font_mano, fill="blue")
+    draw.text((190, 250), random.choice(direcciones), font=font_mano, fill="blue")
+    draw.text((190, 290), dni_donante, font=font_mano, fill="blue")
     
     # Agregar dos filas de suministros para más realismo
     draw.text((50, 430), random.choice(suministros), font=font_mano, fill="blue")
