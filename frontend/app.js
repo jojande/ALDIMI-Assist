@@ -109,17 +109,16 @@ function renderStructuredProfile(docType, profile) {
     else if (docType === 'RECETA') {
         const paciente = profile.paciente || 'No detectado';
         const diagnostico = profile.diagnostico || 'No detectado';
-        const medsStr = profile.medicamentos || '';
-        
-        let medsHtml = '';
-        if (medsStr) {
-            const medsArray = medsStr.split(',').map(m => m.trim()).filter(m => m.length > 0);
-            medsHtml = medsArray.length > 0
-                ? `<ul class="field-meds-list">${medsArray.map(m => `<li>${m}</li>`).join('')}</ul>`
-                : '<span class="field-value">No detectados</span>';
-        } else {
-            medsHtml = '<span class="field-value">No detectados</span>';
+        let medsArray = [];
+        if (Array.isArray(profile.medicamentos)) {
+            medsArray = profile.medicamentos;
+        } else if (typeof profile.medicamentos === 'string' && profile.medicamentos) {
+            medsArray = profile.medicamentos.split(',').map(m => m.trim()).filter(m => m.length > 0);
         }
+
+        const medsHtml = medsArray.length > 0
+            ? `<ul class="field-meds-list">${medsArray.map(m => `<li>${m}</li>`).join('')}</ul>`
+            : '<span class="field-value">No detectados</span>';
 
         container.innerHTML = `
             <div class="field-group">

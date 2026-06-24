@@ -21,19 +21,19 @@ def crear_recibo_detallado(nombre_archivo, correlativo, nombre_donante, dni_dona
                 continue
         return ImageFont.load_default()
 
-    font_titulo = get_windows_font("arialbd.ttf", 22)
+    font_titulo = get_windows_font("arialbd.ttf", 18)
     font_sub = get_windows_font("arialbd.ttf", 16)
     font_texto = get_windows_font("arial.ttf", 14)
     font_mano = get_windows_font("courier.ttf", 16)
 
     # --- ESTRUCTURA VISUAL ---
     draw.rectangle([15, 15, 585, 835], outline="black", width=2)
-    draw.text((40, 40), "ALBERGUE DIVINA MISERICORDIA (ALDIMI)", font=font_titulo, fill="black") 
-    draw.text((40, 70), "RUC: 20508493021 | Lima, Perú", font=font_texto, fill="black")
+    draw.text((40, 40), "ALBERGUE DIVINA MISERICORDIA", font=font_titulo, fill="black") 
+    draw.text((40, 70), "(ALDIMI) | RUC: 20508493021 | Lima, Perú", font=font_texto, fill="black")
     
-    draw.rectangle([380, 35, 560, 95], outline="red", width=2)
-    draw.text((395, 45), "RECIBO DE", font=font_sub, fill="red")
-    draw.text((395, 65), f"DONACIÓN N° {1000 + correlativo}", font=font_sub, fill="red")
+    draw.rectangle([400, 35, 560, 95], outline="red", width=2)
+    draw.text((415, 45), "RECIBO DE", font=font_sub, fill="red")
+    draw.text((415, 65), f"DONACIÓN N° {1000 + correlativo}", font=font_sub, fill="red")
 
     # --- CAMPOS DE INFORMACIÓN ---
     draw.text((40, 130), "INFORMACIÓN DEL DONANTE", font=font_sub, fill="black")
@@ -50,8 +50,8 @@ def crear_recibo_detallado(nombre_archivo, correlativo, nombre_donante, dni_dona
     draw.text((50, 390), "Descripción de Suministros", font=font_sub, fill="black")
     draw.text((450, 390), "Cantidad", font=font_sub, fill="black")
 
-    draw.text((40, 580), "VALORACIÓN ESTIMADA: S/", font=font_sub, fill="black")
-    draw.line((240, 595, 400, 595), fill="gray", width=1)
+    draw.text((40, 580), "VALORACIÓN ESTIMADA: S/.", font=font_sub, fill="black")
+    draw.line((260, 595, 420, 595), fill="gray", width=1)
     
     # --- VARIABILIDAD DE DATOS ---
     direcciones = ["Av. Arequipa 1234", "Jr. Huallaga 456", "Calle Las Flores 789", "Av. Javier Prado 2020", "Urb. Los Olivos 111", "Av. El Sol 555"]
@@ -71,7 +71,7 @@ def crear_recibo_detallado(nombre_archivo, correlativo, nombre_donante, dni_dona
     draw.text((50, 460), random.choice(suministros), font=font_mano, fill="blue")
     draw.text((470, 460), str(random.randint(1, 100)), font=font_mano, fill="blue")
     
-    draw.text((250, 580), f"{random.randint(50, 2500)}.00", font=font_mano, fill="blue")
+    draw.text((280, 580), f"{random.randint(50, 2500)}.00", font=font_mano, fill="blue")
     draw.text((40, 630), f"MÉTODO: {random.choice(metodos)}", font=font_texto, fill="black")
 
     # --- FIRMAS ---
