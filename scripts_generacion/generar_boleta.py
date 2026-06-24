@@ -42,7 +42,7 @@ def crear_recibo_detallado(nombre_archivo, correlativo, nombre_donante, dni_dona
     campos = [(40, 170, "Fecha:"), (40, 210, "Nombre/Razón Social:"), (40, 250, "Dirección:"), (40, 290, "DNI/RUC:")]
     for x, y, etiqueta in campos:
         draw.text((x, y), etiqueta, font=font_texto, fill="black")
-        draw.line((x + 150, y + 15, 560, y + 15), fill="gray", width=1)
+        draw.line((x + 150, y + 22, 560, y + 22), fill="gray", width=1)
 
     draw.text((40, 350), "DETALLES DE LA DONACIÓN", font=font_sub, fill="black")
     draw.rectangle([40, 380, 560, 550], outline="black", width=1)

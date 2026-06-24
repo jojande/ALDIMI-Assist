@@ -284,6 +284,7 @@ class ALDIMIOcrPipeline:
                     paciente_val = raw_lines[i+1].strip()
                 paciente_val = re.split(r'(?i)\s+(edad|fecha|diagn|rp)', paciente_val)[0].strip()
                 paciente_val = re.sub(r'^[\s_\-\.\,:]+|[\s_\-\.\,:]+$', '', paciente_val).strip()
+                paciente_val = re.sub(r'_+', ' ', paciente_val).strip()
                 data["paciente"] = paciente_val
                 
             if "DIAGN" in l_u or "DX" in l_u:
@@ -292,11 +293,45 @@ class ALDIMIOcrPipeline:
                     diag_val = raw_lines[i+1].strip()
                 diag_val = re.split(r'(?i)\s+(fecha|edad|paciente|rp)', diag_val)[0].strip()
                 diag_val = re.sub(r'^[\s_\-\.\,:]+|[\s_\-\.\,:]+$', '', diag_val).strip()
+                diag_val = re.sub(r'_+', ' ', diag_val).strip()
                 data["diagnostico"] = diag_val
+
+        # Extract and merge medications
+        rp_idx = -1
+        for i, line in enumerate(raw_lines):
+            if "RP/" in line.upper():
+                rp_idx = i
+                break
                 
-            if any(x in l_u for x in ["MG", "TAB", "CAPS", "ML", "JARABE", "GOTAS", "%"]):
-                med_clean = re.sub(r'^\d+[\s\.\,\-\/]+', '', line).strip()
-                data["medicamentos"].append(med_clean)
+        med_lines = []
+        start_idx = rp_idx + 1 if rp_idx != -1 else 0
+        for i in range(start_idx, len(raw_lines)):
+            line = raw_lines[i].strip()
+            l_u = line.upper()
+            if any(k in l_u for k in ["FIRMA", "SELLO", "DRA", "DR.", "CMP", "ATENCION", "ATENCIÓN", "EMERGENCIA"]):
+                break
+            if line:
+                med_lines.append(line)
+                
+        merged_meds = []
+        j = 0
+        while j < len(med_lines):
+            line = med_lines[j]
+            l_u = line.upper()
+            
+            line_clean = re.sub(r'^\d+[\s\.\,\-\/]+', '', line).strip()
+            
+            if any(u in l_u for u in ["MG", "ML", "G", "CAPS", "TAB", "JARABE", "GOTAS", "%"]):
+                if j + 1 < len(med_lines):
+                    next_line = med_lines[j+1]
+                    next_u = next_line.upper()
+                    if not any(u in next_u for u in ["MG", "ML", "CAPS", "TAB"]) or any(k in next_u for k in ["CADA", "POR", "DIA", "HORA", "TABLETA", "CAPSULA", "TOMA"]):
+                        line_clean += " - " + next_line
+                        j += 1
+            merged_meds.append(line_clean)
+            j += 1
+            
+        data["medicamentos"] = merged_meds
         return data
 
     def _parse_recibo(self, raw_lines, text_joined):

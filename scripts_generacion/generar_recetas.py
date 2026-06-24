@@ -78,21 +78,21 @@ def generar_receta_detallada(nombre_archivo, correlativo, nombre_paciente, edad_
 
     # Etiquetas del paciente
     draw.text((40, 160), "Paciente:", font=font_sub, fill="black")
-    draw.line((120, 175, 420, 175), fill="black", width=1)
+    draw.line((120, 182, 420, 182), fill="black", width=1)
     
     draw.text((440, 160), "Edad:", font=font_sub, fill="black")
-    draw.line((490, 175, 560, 175), fill="black", width=1)
+    draw.line((490, 182, 560, 182), fill="black", width=1)
     
     draw.text((40, 200), "Fecha:", font=font_sub, fill="black")
-    draw.line((100, 215, 220, 215), fill="black", width=1)
+    draw.line((100, 222, 220, 222), fill="black", width=1)
 
     draw.text((40, 240), "Diagnóstico:", font=font_sub, fill="black")
-    draw.line((140, 255, 560, 255), fill="black", width=1)
+    draw.line((140, 262, 560, 262), fill="black", width=1)
 
     draw.text((40, 300), "Rp./", font=font_titulo, fill="black")
 
     # Líneas para recetas
-    y_offset = 360
+    y_offset = 370
     for _ in range(4):
         draw.line((60, y_offset, 560, y_offset), fill="gray", width=1)
         y_offset += 60
