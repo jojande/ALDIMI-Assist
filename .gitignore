@@ -23,3 +23,10 @@ data/
 .vscode/
 .idea/
 .DS_Store
+
+# SQLite Databases
+*.db
+*.sqlite
+*.db-journal
+*.db-shm
+*.db-wal
