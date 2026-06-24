@@ -1,0 +1,3302 @@
+[
+    {
+        "adulto": {
+            "dni": "84161709",
+            "nombres": "MANUEL",
+            "ape1": "FLORES",
+            "ape2": "SANCHEZ",
+            "fecha_nacimiento": "06 05 1976",
+            "sexo": "M",
+            "ubigeo": "958540",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "68238921",
+            "nombres": "LUIS",
+            "ape1": "FLORES",
+            "ape2": "CRUZ",
+            "fecha_nacimiento": "13 08 2020",
+            "sexo": "M",
+            "ubigeo": "958540",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "24660533",
+            "nombres": "EMILIO",
+            "ape1": "DELGADO",
+            "ape2": "GOMEZ",
+            "fecha_nacimiento": "15 01 1976",
+            "sexo": "M",
+            "ubigeo": "901619",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "93057288",
+            "nombres": "SEBASTIAN",
+            "ape1": "DELGADO",
+            "ape2": "VILLANUEVA",
+            "fecha_nacimiento": "08 08 2013",
+            "sexo": "F",
+            "ubigeo": "901619",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "41422081",
+            "nombres": "SEBASTIAN",
+            "ape1": "SUAREZ",
+            "ape2": "FLORES",
+            "fecha_nacimiento": "14 05 1989",
+            "sexo": "M",
+            "ubigeo": "804715",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "45960911",
+            "nombres": "EMILIO",
+            "ape1": "SUAREZ",
+            "ape2": "GUTIERREZ",
+            "fecha_nacimiento": "19 11 2023",
+            "sexo": "M",
+            "ubigeo": "804715",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "64265391",
+            "nombres": "MARIANA",
+            "ape1": "MOSTO",
+            "ape2": "VARGAS",
+            "fecha_nacimiento": "15 06 1972",
+            "sexo": "M",
+            "ubigeo": "583758",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "27970810",
+            "nombres": "DIEGO",
+            "ape1": "MOSTO",
+            "ape2": "CASTILLO",
+            "fecha_nacimiento": "22 02 2023",
+            "sexo": "M",
+            "ubigeo": "583758",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "72809046",
+            "nombres": "LUIS",
+            "ape1": "SANCHEZ",
+            "ape2": "GOMEZ",
+            "fecha_nacimiento": "18 07 1959",
+            "sexo": "M",
+            "ubigeo": "722601",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "27582485",
+            "nombres": "DIEGO",
+            "ape1": "SANCHEZ",
+            "ape2": "ALVAREZ",
+            "fecha_nacimiento": "11 05 2013",
+            "sexo": "F",
+            "ubigeo": "722601",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "37145426",
+            "nombres": "LEONARDO",
+            "ape1": "PEREZ",
+            "ape2": "MAMANI",
+            "fecha_nacimiento": "18 03 1975",
+            "sexo": "M",
+            "ubigeo": "448670",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "35355455",
+            "nombres": "ROSA",
+            "ape1": "PEREZ",
+            "ape2": "SALAZAR",
+            "fecha_nacimiento": "09 02 2011",
+            "sexo": "M",
+            "ubigeo": "448670",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "95344016",
+            "nombres": "ANGEL",
+            "ape1": "AGUILAR",
+            "ape2": "DIAZ",
+            "fecha_nacimiento": "01 05 1965",
+            "sexo": "M",
+            "ubigeo": "790114",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "88606157",
+            "nombres": "LUCAS",
+            "ape1": "AGUILAR",
+            "ape2": "PAREDES",
+            "fecha_nacimiento": "29 01 2023",
+            "sexo": "M",
+            "ubigeo": "790114",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "76615023",
+            "nombres": "SEBASTIAN",
+            "ape1": "MEDINA",
+            "ape2": "HUANCA",
+            "fecha_nacimiento": "08 06 1951",
+            "sexo": "M",
+            "ubigeo": "341010",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "30729202",
+            "nombres": "ANA",
+            "ape1": "MEDINA",
+            "ape2": "VILLANUEVA",
+            "fecha_nacimiento": "27 10 2009",
+            "sexo": "F",
+            "ubigeo": "341010",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "43513057",
+            "nombres": "EDUARDO",
+            "ape1": "DIAZ",
+            "ape2": "CRUZ",
+            "fecha_nacimiento": "24 02 1963",
+            "sexo": "M",
+            "ubigeo": "328085",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "40796025",
+            "nombres": "YEISON",
+            "ape1": "DIAZ",
+            "ape2": "VARGAS",
+            "fecha_nacimiento": "08 02 2022",
+            "sexo": "F",
+            "ubigeo": "328085",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "76942309",
+            "nombres": "ANGEL",
+            "ape1": "HUAMAN",
+            "ape2": "DIAZ",
+            "fecha_nacimiento": "13 05 2000",
+            "sexo": "M",
+            "ubigeo": "687561",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "95676403",
+            "nombres": "DANIELA",
+            "ape1": "HUAMAN",
+            "ape2": "SUAREZ",
+            "fecha_nacimiento": "19 03 2015",
+            "sexo": "F",
+            "ubigeo": "687561",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "96389086",
+            "nombres": "DANIEL",
+            "ape1": "FERNANDEZ",
+            "ape2": "GARCIA",
+            "fecha_nacimiento": "29 07 2000",
+            "sexo": "M",
+            "ubigeo": "791643",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "88418650",
+            "nombres": "CARLOS",
+            "ape1": "FERNANDEZ",
+            "ape2": "CABRERA",
+            "fecha_nacimiento": "04 02 2011",
+            "sexo": "M",
+            "ubigeo": "791643",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "70270216",
+            "nombres": "JOSE",
+            "ape1": "PERALTA",
+            "ape2": "PEREZ",
+            "fecha_nacimiento": "08 04 1967",
+            "sexo": "M",
+            "ubigeo": "630844",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "51394088",
+            "nombres": "CARLOS",
+            "ape1": "PERALTA",
+            "ape2": "MENDOZA",
+            "fecha_nacimiento": "27 09 2008",
+            "sexo": "M",
+            "ubigeo": "630844",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "54093315",
+            "nombres": "VALENTINA",
+            "ape1": "ROMERO",
+            "ape2": "RIVERA",
+            "fecha_nacimiento": "17 08 1998",
+            "sexo": "M",
+            "ubigeo": "338287",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "86803076",
+            "nombres": "VALENTINA",
+            "ape1": "ROMERO",
+            "ape2": "SUAREZ",
+            "fecha_nacimiento": "24 09 2011",
+            "sexo": "M",
+            "ubigeo": "338287",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "35009144",
+            "nombres": "JOAQUIN",
+            "ape1": "ROMERO",
+            "ape2": "GONZALES",
+            "fecha_nacimiento": "22 09 1959",
+            "sexo": "M",
+            "ubigeo": "421894",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "65157083",
+            "nombres": "MANUEL",
+            "ape1": "ROMERO",
+            "ape2": "DIAZ",
+            "fecha_nacimiento": "24 03 2021",
+            "sexo": "F",
+            "ubigeo": "421894",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "82980385",
+            "nombres": "ANGEL",
+            "ape1": "CONDORI",
+            "ape2": "CASTILLO",
+            "fecha_nacimiento": "27 01 1975",
+            "sexo": "M",
+            "ubigeo": "864697",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "85229928",
+            "nombres": "ANA",
+            "ape1": "CONDORI",
+            "ape2": "SANCHEZ",
+            "fecha_nacimiento": "11 05 2024",
+            "sexo": "F",
+            "ubigeo": "864697",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "72130467",
+            "nombres": "JUAN",
+            "ape1": "MEDINA",
+            "ape2": "CABRERA",
+            "fecha_nacimiento": "19 10 2003",
+            "sexo": "M",
+            "ubigeo": "502489",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "72167012",
+            "nombres": "ALONSO",
+            "ape1": "MEDINA",
+            "ape2": "SILVA",
+            "fecha_nacimiento": "28 07 2024",
+            "sexo": "F",
+            "ubigeo": "502489",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "37293292",
+            "nombres": "JORGE",
+            "ape1": "SUAREZ",
+            "ape2": "FLORES",
+            "fecha_nacimiento": "02 02 1970",
+            "sexo": "M",
+            "ubigeo": "191886",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "56721376",
+            "nombres": "ANGEL",
+            "ape1": "SUAREZ",
+            "ape2": "ALVAREZ",
+            "fecha_nacimiento": "10 01 2011",
+            "sexo": "F",
+            "ubigeo": "191886",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "25907408",
+            "nombres": "CARLOS",
+            "ape1": "CHAVEZ",
+            "ape2": "RAMIREZ",
+            "fecha_nacimiento": "18 06 1998",
+            "sexo": "M",
+            "ubigeo": "269149",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "18711779",
+            "nombres": "RICARDO",
+            "ape1": "CHAVEZ",
+            "ape2": "ORTEGA",
+            "fecha_nacimiento": "13 08 2016",
+            "sexo": "M",
+            "ubigeo": "269149",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "36958750",
+            "nombres": "DAVID",
+            "ape1": "TORRES",
+            "ape2": "ROMERO",
+            "fecha_nacimiento": "27 12 1962",
+            "sexo": "M",
+            "ubigeo": "372811",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "72597160",
+            "nombres": "RODRIGO",
+            "ape1": "TORRES",
+            "ape2": "CASTRO",
+            "fecha_nacimiento": "19 05 2013",
+            "sexo": "M",
+            "ubigeo": "372811",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "62516238",
+            "nombres": "JOAQUIN",
+            "ape1": "DIAZ",
+            "ape2": "ALVAREZ",
+            "fecha_nacimiento": "04 10 2004",
+            "sexo": "M",
+            "ubigeo": "522788",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "15324841",
+            "nombres": "SOFIA",
+            "ape1": "DIAZ",
+            "ape2": "ESPINOZA",
+            "fecha_nacimiento": "23 10 2010",
+            "sexo": "F",
+            "ubigeo": "522788",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "17223063",
+            "nombres": "CAMILA",
+            "ape1": "HUANCA",
+            "ape2": "ROMERO",
+            "fecha_nacimiento": "12 08 1991",
+            "sexo": "M",
+            "ubigeo": "506897",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "90244732",
+            "nombres": "DIEGO",
+            "ape1": "HUANCA",
+            "ape2": "RAMOS",
+            "fecha_nacimiento": "25 03 2020",
+            "sexo": "M",
+            "ubigeo": "506897",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "81435151",
+            "nombres": "LUCAS",
+            "ape1": "GIBU",
+            "ape2": "ROJAS",
+            "fecha_nacimiento": "05 04 1986",
+            "sexo": "M",
+            "ubigeo": "925808",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "38233059",
+            "nombres": "LUCAS",
+            "ape1": "GIBU",
+            "ape2": "CONDORI",
+            "fecha_nacimiento": "13 04 2009",
+            "sexo": "M",
+            "ubigeo": "925808",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "11753306",
+            "nombres": "LUCAS",
+            "ape1": "DIAZ",
+            "ape2": "GARCIA",
+            "fecha_nacimiento": "15 08 2005",
+            "sexo": "M",
+            "ubigeo": "360541",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "84842800",
+            "nombres": "YEISON",
+            "ape1": "DIAZ",
+            "ape2": "MORALES",
+            "fecha_nacimiento": "22 02 2023",
+            "sexo": "M",
+            "ubigeo": "360541",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "82934003",
+            "nombres": "SEBASTIAN",
+            "ape1": "CASTILLO",
+            "ape2": "FLORES",
+            "fecha_nacimiento": "17 11 1963",
+            "sexo": "M",
+            "ubigeo": "798141",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "88829988",
+            "nombres": "ALBERTO",
+            "ape1": "CASTILLO",
+            "ape2": "PERALTA",
+            "fecha_nacimiento": "17 02 2011",
+            "sexo": "F",
+            "ubigeo": "798141",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "49174653",
+            "nombres": "MIGUEL",
+            "ape1": "VARGAS",
+            "ape2": "HUAMAN",
+            "fecha_nacimiento": "09 03 1952",
+            "sexo": "M",
+            "ubigeo": "421929",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "80370991",
+            "nombres": "LUCAS",
+            "ape1": "VARGAS",
+            "ape2": "HUANCA",
+            "fecha_nacimiento": "26 01 2008",
+            "sexo": "M",
+            "ubigeo": "421929",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "63352778",
+            "nombres": "LUCIA",
+            "ape1": "VEGA",
+            "ape2": "SUAREZ",
+            "fecha_nacimiento": "02 01 1952",
+            "sexo": "M",
+            "ubigeo": "545106",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "96693560",
+            "nombres": "GABRIEL",
+            "ape1": "VEGA",
+            "ape2": "ORTIZ",
+            "fecha_nacimiento": "23 11 2017",
+            "sexo": "M",
+            "ubigeo": "545106",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "93518522",
+            "nombres": "VALERIA",
+            "ape1": "PAREDES",
+            "ape2": "SILVA",
+            "fecha_nacimiento": "08 03 1989",
+            "sexo": "M",
+            "ubigeo": "190942",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "22004931",
+            "nombres": "JOSE",
+            "ape1": "PAREDES",
+            "ape2": "MENDOZA",
+            "fecha_nacimiento": "15 09 2010",
+            "sexo": "F",
+            "ubigeo": "190942",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "19818156",
+            "nombres": "VALENTINA",
+            "ape1": "CASTILLO",
+            "ape2": "VILLANUEVA",
+            "fecha_nacimiento": "15 09 1952",
+            "sexo": "M",
+            "ubigeo": "166620",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "52412758",
+            "nombres": "MANUEL",
+            "ape1": "CASTILLO",
+            "ape2": "VEGA",
+            "fecha_nacimiento": "18 02 2023",
+            "sexo": "M",
+            "ubigeo": "166620",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "29636287",
+            "nombres": "SEBASTIAN",
+            "ape1": "QUISPE",
+            "ape2": "GIBU",
+            "fecha_nacimiento": "10 03 1968",
+            "sexo": "M",
+            "ubigeo": "565172",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "26273655",
+            "nombres": "RODRIGO",
+            "ape1": "QUISPE",
+            "ape2": "GARCIA",
+            "fecha_nacimiento": "27 07 2021",
+            "sexo": "M",
+            "ubigeo": "565172",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "59269726",
+            "nombres": "CARMEN",
+            "ape1": "RIVERA",
+            "ape2": "GARCIA",
+            "fecha_nacimiento": "02 11 1997",
+            "sexo": "M",
+            "ubigeo": "478635",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "36944858",
+            "nombres": "DANIEL",
+            "ape1": "RIVERA",
+            "ape2": "DELGADO",
+            "fecha_nacimiento": "06 11 2014",
+            "sexo": "F",
+            "ubigeo": "478635",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "17301141",
+            "nombres": "ROSA",
+            "ape1": "ROJAS",
+            "ape2": "VEGA",
+            "fecha_nacimiento": "04 02 1996",
+            "sexo": "M",
+            "ubigeo": "260302",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "66452282",
+            "nombres": "RAUL",
+            "ape1": "ROJAS",
+            "ape2": "MAMANI",
+            "fecha_nacimiento": "06 06 2022",
+            "sexo": "M",
+            "ubigeo": "260302",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "19533908",
+            "nombres": "MATIAS",
+            "ape1": "MEDINA",
+            "ape2": "MORALES",
+            "fecha_nacimiento": "29 09 1981",
+            "sexo": "M",
+            "ubigeo": "845268",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "98083552",
+            "nombres": "ALONSO",
+            "ape1": "MEDINA",
+            "ape2": "CASTILLO",
+            "fecha_nacimiento": "06 02 2021",
+            "sexo": "M",
+            "ubigeo": "845268",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "61532580",
+            "nombres": "ANA",
+            "ape1": "CASTRO",
+            "ape2": "DELGADO",
+            "fecha_nacimiento": "02 04 1982",
+            "sexo": "M",
+            "ubigeo": "852167",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "37254460",
+            "nombres": "DANIEL",
+            "ape1": "CASTRO",
+            "ape2": "SALAZAR",
+            "fecha_nacimiento": "16 03 2024",
+            "sexo": "M",
+            "ubigeo": "852167",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "76826647",
+            "nombres": "RICARDO",
+            "ape1": "MENDOZA",
+            "ape2": "FLORES",
+            "fecha_nacimiento": "19 09 1974",
+            "sexo": "M",
+            "ubigeo": "374213",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "82024762",
+            "nombres": "LUIS",
+            "ape1": "MENDOZA",
+            "ape2": "SANCHEZ",
+            "fecha_nacimiento": "04 11 2022",
+            "sexo": "F",
+            "ubigeo": "374213",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "65072366",
+            "nombres": "LEONARDO",
+            "ape1": "ESPINOZA",
+            "ape2": "GONZALES",
+            "fecha_nacimiento": "14 05 2002",
+            "sexo": "M",
+            "ubigeo": "235522",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "50177539",
+            "nombres": "LUIS",
+            "ape1": "ESPINOZA",
+            "ape2": "RIVERA",
+            "fecha_nacimiento": "09 09 2008",
+            "sexo": "M",
+            "ubigeo": "235522",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "24437516",
+            "nombres": "SOFIA",
+            "ape1": "MAMANI",
+            "ape2": "VEGA",
+            "fecha_nacimiento": "11 10 1957",
+            "sexo": "M",
+            "ubigeo": "107323",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "26617757",
+            "nombres": "PAULA",
+            "ape1": "MAMANI",
+            "ape2": "CASTRO",
+            "fecha_nacimiento": "21 10 2012",
+            "sexo": "F",
+            "ubigeo": "107323",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "56054804",
+            "nombres": "PEDRO",
+            "ape1": "SUAREZ",
+            "ape2": "RUIZ",
+            "fecha_nacimiento": "14 09 1983",
+            "sexo": "M",
+            "ubigeo": "824265",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "19615347",
+            "nombres": "SOFIA",
+            "ape1": "SUAREZ",
+            "ape2": "AGUILAR",
+            "fecha_nacimiento": "08 08 2024",
+            "sexo": "M",
+            "ubigeo": "824265",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "65224528",
+            "nombres": "CAMILA",
+            "ape1": "GOMEZ",
+            "ape2": "VEGA",
+            "fecha_nacimiento": "14 09 1951",
+            "sexo": "M",
+            "ubigeo": "111430",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "76347028",
+            "nombres": "ANGEL",
+            "ape1": "GOMEZ",
+            "ape2": "SALAZAR",
+            "fecha_nacimiento": "22 05 2008",
+            "sexo": "M",
+            "ubigeo": "111430",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "84006186",
+            "nombres": "CARMEN",
+            "ape1": "PEREZ",
+            "ape2": "CRUZ",
+            "fecha_nacimiento": "31 05 1958",
+            "sexo": "M",
+            "ubigeo": "465612",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "47496214",
+            "nombres": "MARIA",
+            "ape1": "PEREZ",
+            "ape2": "TORRES",
+            "fecha_nacimiento": "17 05 2009",
+            "sexo": "M",
+            "ubigeo": "465612",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "11206293",
+            "nombres": "LUIS",
+            "ape1": "VARGAS",
+            "ape2": "PEREZ",
+            "fecha_nacimiento": "29 03 1995",
+            "sexo": "M",
+            "ubigeo": "427748",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "95253088",
+            "nombres": "ENRIQUE",
+            "ape1": "VARGAS",
+            "ape2": "FERNANDEZ",
+            "fecha_nacimiento": "23 08 2020",
+            "sexo": "M",
+            "ubigeo": "427748",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "39240757",
+            "nombres": "GABRIEL",
+            "ape1": "SALAZAR",
+            "ape2": "SANCHEZ",
+            "fecha_nacimiento": "06 02 1992",
+            "sexo": "M",
+            "ubigeo": "966738",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "50897600",
+            "nombres": "ANA",
+            "ape1": "SALAZAR",
+            "ape2": "HUAMAN",
+            "fecha_nacimiento": "02 05 2024",
+            "sexo": "M",
+            "ubigeo": "966738",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "65122151",
+            "nombres": "CARMEN",
+            "ape1": "VARGAS",
+            "ape2": "REYES",
+            "fecha_nacimiento": "27 08 1980",
+            "sexo": "M",
+            "ubigeo": "918359",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "99313701",
+            "nombres": "EMILIO",
+            "ape1": "VARGAS",
+            "ape2": "ESPINOZA",
+            "fecha_nacimiento": "05 08 2009",
+            "sexo": "M",
+            "ubigeo": "918359",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "76153816",
+            "nombres": "LUCAS",
+            "ape1": "MOSTO",
+            "ape2": "CASTILLO",
+            "fecha_nacimiento": "11 03 1959",
+            "sexo": "M",
+            "ubigeo": "225756",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "26692679",
+            "nombres": "PEDRO",
+            "ape1": "MOSTO",
+            "ape2": "GUTIERREZ",
+            "fecha_nacimiento": "23 05 2022",
+            "sexo": "M",
+            "ubigeo": "225756",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "56504080",
+            "nombres": "LUCIA",
+            "ape1": "VILLANUEVA",
+            "ape2": "VEGA",
+            "fecha_nacimiento": "25 05 2003",
+            "sexo": "M",
+            "ubigeo": "573332",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "48973358",
+            "nombres": "MATEO",
+            "ape1": "VILLANUEVA",
+            "ape2": "LOPEZ",
+            "fecha_nacimiento": "13 08 2023",
+            "sexo": "F",
+            "ubigeo": "573332",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "43406971",
+            "nombres": "PEDRO",
+            "ape1": "MEDINA",
+            "ape2": "RAMOS",
+            "fecha_nacimiento": "11 03 1986",
+            "sexo": "M",
+            "ubigeo": "927124",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "30425416",
+            "nombres": "VALENTINA",
+            "ape1": "MEDINA",
+            "ape2": "RIVERA",
+            "fecha_nacimiento": "21 12 2019",
+            "sexo": "M",
+            "ubigeo": "927124",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "99569354",
+            "nombres": "ENRIQUE",
+            "ape1": "RODRIGUEZ",
+            "ape2": "MORALES",
+            "fecha_nacimiento": "28 09 1968",
+            "sexo": "M",
+            "ubigeo": "955306",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "73182336",
+            "nombres": "PEDRO",
+            "ape1": "RODRIGUEZ",
+            "ape2": "DIAZ",
+            "fecha_nacimiento": "02 05 2011",
+            "sexo": "F",
+            "ubigeo": "955306",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "82566292",
+            "nombres": "ANA",
+            "ape1": "RODRIGUEZ",
+            "ape2": "ROMERO",
+            "fecha_nacimiento": "13 12 1955",
+            "sexo": "M",
+            "ubigeo": "337210",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "25326732",
+            "nombres": "LUCIA",
+            "ape1": "RODRIGUEZ",
+            "ape2": "SANCHEZ",
+            "fecha_nacimiento": "26 03 2011",
+            "sexo": "F",
+            "ubigeo": "337210",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "14914926",
+            "nombres": "DIEGO",
+            "ape1": "PEREZ",
+            "ape2": "ROJAS",
+            "fecha_nacimiento": "08 09 1996",
+            "sexo": "M",
+            "ubigeo": "668840",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "75551467",
+            "nombres": "RICARDO",
+            "ape1": "PEREZ",
+            "ape2": "RIVERA",
+            "fecha_nacimiento": "23 03 2014",
+            "sexo": "F",
+            "ubigeo": "668840",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "61538793",
+            "nombres": "RAUL",
+            "ape1": "ALVAREZ",
+            "ape2": "NUNEZ",
+            "fecha_nacimiento": "03 04 1997",
+            "sexo": "M",
+            "ubigeo": "209027",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "81608873",
+            "nombres": "MARTIN",
+            "ape1": "ALVAREZ",
+            "ape2": "MOSTO",
+            "fecha_nacimiento": "08 03 2009",
+            "sexo": "F",
+            "ubigeo": "209027",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "78301282",
+            "nombres": "VALERIA",
+            "ape1": "CASTILLO",
+            "ape2": "CORDOVA",
+            "fecha_nacimiento": "26 09 1981",
+            "sexo": "M",
+            "ubigeo": "302906",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "81090014",
+            "nombres": "NICO",
+            "ape1": "CASTILLO",
+            "ape2": "MAMANI",
+            "fecha_nacimiento": "15 06 2022",
+            "sexo": "M",
+            "ubigeo": "302906",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "97751741",
+            "nombres": "SEBASTIAN",
+            "ape1": "RODRIGUEZ",
+            "ape2": "QUISPE",
+            "fecha_nacimiento": "12 10 1988",
+            "sexo": "M",
+            "ubigeo": "418488",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "92649235",
+            "nombres": "DIEGO",
+            "ape1": "RODRIGUEZ",
+            "ape2": "AGUILAR",
+            "fecha_nacimiento": "20 07 2015",
+            "sexo": "M",
+            "ubigeo": "418488",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "93514157",
+            "nombres": "LUIS",
+            "ape1": "MEDINA",
+            "ape2": "RAMIREZ",
+            "fecha_nacimiento": "13 06 1984",
+            "sexo": "M",
+            "ubigeo": "914849",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "56946408",
+            "nombres": "ANGEL",
+            "ape1": "MEDINA",
+            "ape2": "NUNEZ",
+            "fecha_nacimiento": "15 12 2016",
+            "sexo": "M",
+            "ubigeo": "914849",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "44105583",
+            "nombres": "MATEO",
+            "ape1": "PERALTA",
+            "ape2": "ORTIZ",
+            "fecha_nacimiento": "15 09 1971",
+            "sexo": "M",
+            "ubigeo": "671504",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "95900677",
+            "nombres": "JULIA",
+            "ape1": "PERALTA",
+            "ape2": "ORTIZ",
+            "fecha_nacimiento": "16 01 2010",
+            "sexo": "F",
+            "ubigeo": "671504",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "39734317",
+            "nombres": "LUCIA",
+            "ape1": "CABRERA",
+            "ape2": "MOSTO",
+            "fecha_nacimiento": "20 09 2004",
+            "sexo": "M",
+            "ubigeo": "274164",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "91019992",
+            "nombres": "CAMILA",
+            "ape1": "CABRERA",
+            "ape2": "ORTEGA",
+            "fecha_nacimiento": "19 07 2022",
+            "sexo": "F",
+            "ubigeo": "274164",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "62705498",
+            "nombres": "MIGUEL",
+            "ape1": "MENDOZA",
+            "ape2": "ESPINOZA",
+            "fecha_nacimiento": "08 11 1951",
+            "sexo": "M",
+            "ubigeo": "771481",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "66006932",
+            "nombres": "EDUARDO",
+            "ape1": "MENDOZA",
+            "ape2": "ORTEGA",
+            "fecha_nacimiento": "02 01 2014",
+            "sexo": "M",
+            "ubigeo": "771481",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "51761263",
+            "nombres": "ANDREA",
+            "ape1": "MENDOZA",
+            "ape2": "HUANCA",
+            "fecha_nacimiento": "18 03 1992",
+            "sexo": "M",
+            "ubigeo": "766827",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "48601800",
+            "nombres": "ENRIQUE",
+            "ape1": "MENDOZA",
+            "ape2": "TORRES",
+            "fecha_nacimiento": "26 04 2018",
+            "sexo": "F",
+            "ubigeo": "766827",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "29077604",
+            "nombres": "SEBASTIAN",
+            "ape1": "FERNANDEZ",
+            "ape2": "ALVAREZ",
+            "fecha_nacimiento": "06 11 1985",
+            "sexo": "M",
+            "ubigeo": "313089",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "36711655",
+            "nombres": "SEBASTIAN",
+            "ape1": "FERNANDEZ",
+            "ape2": "ROMERO",
+            "fecha_nacimiento": "28 09 2015",
+            "sexo": "M",
+            "ubigeo": "313089",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "27112296",
+            "nombres": "FERNANDA",
+            "ape1": "GUTIERREZ",
+            "ape2": "ORTEGA",
+            "fecha_nacimiento": "02 03 1960",
+            "sexo": "M",
+            "ubigeo": "132783",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "44353412",
+            "nombres": "ENRIQUE",
+            "ape1": "GUTIERREZ",
+            "ape2": "PERALTA",
+            "fecha_nacimiento": "06 09 2019",
+            "sexo": "M",
+            "ubigeo": "132783",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "18062449",
+            "nombres": "MARIA",
+            "ape1": "SANCHEZ",
+            "ape2": "NUNEZ",
+            "fecha_nacimiento": "11 03 2005",
+            "sexo": "M",
+            "ubigeo": "906715",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "12978212",
+            "nombres": "DANIELA",
+            "ape1": "SANCHEZ",
+            "ape2": "CHAVEZ",
+            "fecha_nacimiento": "09 02 2017",
+            "sexo": "M",
+            "ubigeo": "906715",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "25535427",
+            "nombres": "MARIANA",
+            "ape1": "GUTIERREZ",
+            "ape2": "GARCIA",
+            "fecha_nacimiento": "02 11 2000",
+            "sexo": "M",
+            "ubigeo": "814606",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "85112853",
+            "nombres": "DANIEL",
+            "ape1": "GUTIERREZ",
+            "ape2": "RAMIREZ",
+            "fecha_nacimiento": "26 01 2024",
+            "sexo": "F",
+            "ubigeo": "814606",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "65747941",
+            "nombres": "RAUL",
+            "ape1": "CASTRO",
+            "ape2": "MEDINA",
+            "fecha_nacimiento": "20 03 1967",
+            "sexo": "M",
+            "ubigeo": "372757",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "14914112",
+            "nombres": "PEDRO",
+            "ape1": "CASTRO",
+            "ape2": "MAMANI",
+            "fecha_nacimiento": "24 06 2024",
+            "sexo": "F",
+            "ubigeo": "372757",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "65768341",
+            "nombres": "PAULA",
+            "ape1": "RODRIGUEZ",
+            "ape2": "GUTIERREZ",
+            "fecha_nacimiento": "25 12 1979",
+            "sexo": "M",
+            "ubigeo": "716687",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "20866700",
+            "nombres": "ENRIQUE",
+            "ape1": "RODRIGUEZ",
+            "ape2": "MAMANI",
+            "fecha_nacimiento": "16 07 2009",
+            "sexo": "M",
+            "ubigeo": "716687",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "96643948",
+            "nombres": "RAUL",
+            "ape1": "TORRES",
+            "ape2": "QUISPE",
+            "fecha_nacimiento": "18 07 1990",
+            "sexo": "M",
+            "ubigeo": "303795",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "53152803",
+            "nombres": "ISABELLA",
+            "ape1": "TORRES",
+            "ape2": "VEGA",
+            "fecha_nacimiento": "14 04 2024",
+            "sexo": "F",
+            "ubigeo": "303795",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "23512792",
+            "nombres": "RODRIGO",
+            "ape1": "SILVA",
+            "ape2": "NUNEZ",
+            "fecha_nacimiento": "30 06 1977",
+            "sexo": "M",
+            "ubigeo": "359763",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "69604342",
+            "nombres": "ISABELLA",
+            "ape1": "SILVA",
+            "ape2": "HUANCA",
+            "fecha_nacimiento": "31 05 2009",
+            "sexo": "M",
+            "ubigeo": "359763",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "98255181",
+            "nombres": "NICO",
+            "ape1": "ESPINOZA",
+            "ape2": "ROMERO",
+            "fecha_nacimiento": "19 10 1953",
+            "sexo": "M",
+            "ubigeo": "137334",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "59662952",
+            "nombres": "SEBASTIAN",
+            "ape1": "ESPINOZA",
+            "ape2": "CORDOVA",
+            "fecha_nacimiento": "06 07 2011",
+            "sexo": "M",
+            "ubigeo": "137334",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "35180725",
+            "nombres": "MATIAS",
+            "ape1": "MORALES",
+            "ape2": "PERALTA",
+            "fecha_nacimiento": "13 04 2002",
+            "sexo": "M",
+            "ubigeo": "930182",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "81560972",
+            "nombres": "CARLOS",
+            "ape1": "MORALES",
+            "ape2": "CABRERA",
+            "fecha_nacimiento": "22 11 2011",
+            "sexo": "M",
+            "ubigeo": "930182",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "49469370",
+            "nombres": "LUIS",
+            "ape1": "FLORES",
+            "ape2": "SALAZAR",
+            "fecha_nacimiento": "05 03 1972",
+            "sexo": "M",
+            "ubigeo": "525655",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "26953973",
+            "nombres": "MARIANA",
+            "ape1": "FLORES",
+            "ape2": "NUNEZ",
+            "fecha_nacimiento": "29 03 2022",
+            "sexo": "M",
+            "ubigeo": "525655",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "82776024",
+            "nombres": "JOSE",
+            "ape1": "CHAVEZ",
+            "ape2": "DELGADO",
+            "fecha_nacimiento": "07 12 1979",
+            "sexo": "M",
+            "ubigeo": "483386",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "98391316",
+            "nombres": "MATIAS",
+            "ape1": "CHAVEZ",
+            "ape2": "VARGAS",
+            "fecha_nacimiento": "05 01 2017",
+            "sexo": "M",
+            "ubigeo": "483386",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "54859600",
+            "nombres": "EMILIO",
+            "ape1": "RAMIREZ",
+            "ape2": "RODRIGUEZ",
+            "fecha_nacimiento": "30 07 1958",
+            "sexo": "M",
+            "ubigeo": "658027",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "44320118",
+            "nombres": "ANGEL",
+            "ape1": "RAMIREZ",
+            "ape2": "CHAVEZ",
+            "fecha_nacimiento": "24 05 2011",
+            "sexo": "M",
+            "ubigeo": "658027",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "16984019",
+            "nombres": "ANDREA",
+            "ape1": "SANCHEZ",
+            "ape2": "GIBU",
+            "fecha_nacimiento": "31 07 1951",
+            "sexo": "M",
+            "ubigeo": "387356",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "55045302",
+            "nombres": "PEDRO",
+            "ape1": "SANCHEZ",
+            "ape2": "CASTRO",
+            "fecha_nacimiento": "08 07 2022",
+            "sexo": "F",
+            "ubigeo": "387356",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "32383154",
+            "nombres": "ALEJANDRO",
+            "ape1": "MEDINA",
+            "ape2": "HUANCA",
+            "fecha_nacimiento": "11 11 2002",
+            "sexo": "M",
+            "ubigeo": "557251",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "54445916",
+            "nombres": "EDUARDO",
+            "ape1": "MEDINA",
+            "ape2": "LOPEZ",
+            "fecha_nacimiento": "06 06 2017",
+            "sexo": "F",
+            "ubigeo": "557251",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "99960569",
+            "nombres": "SOFIA",
+            "ape1": "FERNANDEZ",
+            "ape2": "LOPEZ",
+            "fecha_nacimiento": "09 12 1987",
+            "sexo": "M",
+            "ubigeo": "569916",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "67536115",
+            "nombres": "ANA",
+            "ape1": "FERNANDEZ",
+            "ape2": "REYES",
+            "fecha_nacimiento": "08 04 2016",
+            "sexo": "M",
+            "ubigeo": "569916",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "92137271",
+            "nombres": "CARMEN",
+            "ape1": "ALVAREZ",
+            "ape2": "PEREZ",
+            "fecha_nacimiento": "01 05 1964",
+            "sexo": "M",
+            "ubigeo": "389108",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "45642677",
+            "nombres": "DANIELA",
+            "ape1": "ALVAREZ",
+            "ape2": "HUANCA",
+            "fecha_nacimiento": "25 12 2009",
+            "sexo": "M",
+            "ubigeo": "389108",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "22351480",
+            "nombres": "CARLOS",
+            "ape1": "ROMERO",
+            "ape2": "PEREZ",
+            "fecha_nacimiento": "28 08 2003",
+            "sexo": "M",
+            "ubigeo": "357842",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "86417345",
+            "nombres": "ROSA",
+            "ape1": "ROMERO",
+            "ape2": "RAMOS",
+            "fecha_nacimiento": "23 01 2024",
+            "sexo": "M",
+            "ubigeo": "357842",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "36118112",
+            "nombres": "PABLO",
+            "ape1": "ORTIZ",
+            "ape2": "VARGAS",
+            "fecha_nacimiento": "26 10 1953",
+            "sexo": "M",
+            "ubigeo": "944240",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "21797431",
+            "nombres": "CARMEN",
+            "ape1": "ORTIZ",
+            "ape2": "PAREDES",
+            "fecha_nacimiento": "30 08 2014",
+            "sexo": "M",
+            "ubigeo": "944240",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "49411177",
+            "nombres": "EMILIO",
+            "ape1": "VARGAS",
+            "ape2": "AGUILAR",
+            "fecha_nacimiento": "28 03 1963",
+            "sexo": "M",
+            "ubigeo": "737956",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "69259202",
+            "nombres": "DAVID",
+            "ape1": "VARGAS",
+            "ape2": "RODRIGUEZ",
+            "fecha_nacimiento": "20 07 2016",
+            "sexo": "F",
+            "ubigeo": "737956",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "43802129",
+            "nombres": "ALEJANDRO",
+            "ape1": "ALVAREZ",
+            "ape2": "ORTIZ",
+            "fecha_nacimiento": "07 07 1983",
+            "sexo": "M",
+            "ubigeo": "677369",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "55036824",
+            "nombres": "MARIA",
+            "ape1": "ALVAREZ",
+            "ape2": "MORALES",
+            "fecha_nacimiento": "11 10 2009",
+            "sexo": "M",
+            "ubigeo": "677369",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "17154452",
+            "nombres": "MANUEL",
+            "ape1": "GOMEZ",
+            "ape2": "GONZALES",
+            "fecha_nacimiento": "31 07 1961",
+            "sexo": "M",
+            "ubigeo": "603903",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "63755801",
+            "nombres": "RAUL",
+            "ape1": "GOMEZ",
+            "ape2": "GONZALES",
+            "fecha_nacimiento": "29 11 2022",
+            "sexo": "M",
+            "ubigeo": "603903",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "95219041",
+            "nombres": "ENRIQUE",
+            "ape1": "RIVERA",
+            "ape2": "GOMEZ",
+            "fecha_nacimiento": "25 06 1991",
+            "sexo": "M",
+            "ubigeo": "955953",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "21227268",
+            "nombres": "CARMEN",
+            "ape1": "RIVERA",
+            "ape2": "ORTEGA",
+            "fecha_nacimiento": "01 02 2021",
+            "sexo": "F",
+            "ubigeo": "955953",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "33790292",
+            "nombres": "EDUARDO",
+            "ape1": "VARGAS",
+            "ape2": "VARGAS",
+            "fecha_nacimiento": "16 11 1977",
+            "sexo": "M",
+            "ubigeo": "196640",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "37017808",
+            "nombres": "MANUEL",
+            "ape1": "VARGAS",
+            "ape2": "RAMIREZ",
+            "fecha_nacimiento": "24 12 2009",
+            "sexo": "M",
+            "ubigeo": "196640",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "24012196",
+            "nombres": "VICTOR",
+            "ape1": "HUANCA",
+            "ape2": "GOMEZ",
+            "fecha_nacimiento": "27 04 1984",
+            "sexo": "M",
+            "ubigeo": "385249",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "23529881",
+            "nombres": "VALERIA",
+            "ape1": "HUANCA",
+            "ape2": "RUIZ",
+            "fecha_nacimiento": "21 03 2008",
+            "sexo": "M",
+            "ubigeo": "385249",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "26452522",
+            "nombres": "RICARDO",
+            "ape1": "PAREDES",
+            "ape2": "RAMOS",
+            "fecha_nacimiento": "18 02 1983",
+            "sexo": "M",
+            "ubigeo": "515086",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "65935056",
+            "nombres": "RAUL",
+            "ape1": "PAREDES",
+            "ape2": "CABRERA",
+            "fecha_nacimiento": "18 08 2014",
+            "sexo": "M",
+            "ubigeo": "515086",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "37023643",
+            "nombres": "CARMEN",
+            "ape1": "MAMANI",
+            "ape2": "VARGAS",
+            "fecha_nacimiento": "29 02 1988",
+            "sexo": "M",
+            "ubigeo": "749767",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "31382544",
+            "nombres": "MARTIN",
+            "ape1": "MAMANI",
+            "ape2": "FLORES",
+            "fecha_nacimiento": "07 07 2020",
+            "sexo": "M",
+            "ubigeo": "749767",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "72056343",
+            "nombres": "JULIA",
+            "ape1": "ESPINOZA",
+            "ape2": "RUIZ",
+            "fecha_nacimiento": "11 11 1967",
+            "sexo": "M",
+            "ubigeo": "744097",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "68201052",
+            "nombres": "VALERIA",
+            "ape1": "ESPINOZA",
+            "ape2": "QUISPE",
+            "fecha_nacimiento": "31 01 2015",
+            "sexo": "F",
+            "ubigeo": "744097",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "32823243",
+            "nombres": "ALBERTO",
+            "ape1": "GIBU",
+            "ape2": "CHAVEZ",
+            "fecha_nacimiento": "23 04 1958",
+            "sexo": "M",
+            "ubigeo": "469137",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "63078233",
+            "nombres": "CARMEN",
+            "ape1": "GIBU",
+            "ape2": "VARGAS",
+            "fecha_nacimiento": "17 01 2013",
+            "sexo": "M",
+            "ubigeo": "469137",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "35139482",
+            "nombres": "YEISON",
+            "ape1": "DELGADO",
+            "ape2": "SUAREZ",
+            "fecha_nacimiento": "21 07 1991",
+            "sexo": "M",
+            "ubigeo": "255669",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "47561859",
+            "nombres": "CARMEN",
+            "ape1": "DELGADO",
+            "ape2": "RAMIREZ",
+            "fecha_nacimiento": "01 10 2009",
+            "sexo": "M",
+            "ubigeo": "255669",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "66806325",
+            "nombres": "SOFIA",
+            "ape1": "CONDORI",
+            "ape2": "HUANCA",
+            "fecha_nacimiento": "07 09 1951",
+            "sexo": "M",
+            "ubigeo": "161467",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "17986285",
+            "nombres": "ENRIQUE",
+            "ape1": "CONDORI",
+            "ape2": "CONDORI",
+            "fecha_nacimiento": "02 04 2021",
+            "sexo": "M",
+            "ubigeo": "161467",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "82254792",
+            "nombres": "GABRIEL",
+            "ape1": "CASTILLO",
+            "ape2": "MEDINA",
+            "fecha_nacimiento": "01 09 1977",
+            "sexo": "M",
+            "ubigeo": "988877",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "60943960",
+            "nombres": "RAUL",
+            "ape1": "CASTILLO",
+            "ape2": "CONDORI",
+            "fecha_nacimiento": "30 08 2021",
+            "sexo": "F",
+            "ubigeo": "988877",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "81424788",
+            "nombres": "MATIAS",
+            "ape1": "RODRIGUEZ",
+            "ape2": "PEREZ",
+            "fecha_nacimiento": "08 08 1964",
+            "sexo": "M",
+            "ubigeo": "806894",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "75166216",
+            "nombres": "LUIS",
+            "ape1": "RODRIGUEZ",
+            "ape2": "MENDOZA",
+            "fecha_nacimiento": "14 08 2021",
+            "sexo": "M",
+            "ubigeo": "806894",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "41254200",
+            "nombres": "SOFIA",
+            "ape1": "REYES",
+            "ape2": "HUAMAN",
+            "fecha_nacimiento": "29 06 1969",
+            "sexo": "M",
+            "ubigeo": "468640",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "57056222",
+            "nombres": "MANUEL",
+            "ape1": "REYES",
+            "ape2": "VEGA",
+            "fecha_nacimiento": "23 07 2018",
+            "sexo": "M",
+            "ubigeo": "468640",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "95392671",
+            "nombres": "JOSE",
+            "ape1": "HUANCA",
+            "ape2": "GUTIERREZ",
+            "fecha_nacimiento": "02 05 1984",
+            "sexo": "M",
+            "ubigeo": "498848",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "58239185",
+            "nombres": "MARTIN",
+            "ape1": "HUANCA",
+            "ape2": "MEDINA",
+            "fecha_nacimiento": "14 12 2024",
+            "sexo": "M",
+            "ubigeo": "498848",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "73390197",
+            "nombres": "CAMILA",
+            "ape1": "CRUZ",
+            "ape2": "PINTO",
+            "fecha_nacimiento": "22 05 1954",
+            "sexo": "M",
+            "ubigeo": "613463",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "13447203",
+            "nombres": "MARIA",
+            "ape1": "CRUZ",
+            "ape2": "ALVAREZ",
+            "fecha_nacimiento": "20 04 2010",
+            "sexo": "M",
+            "ubigeo": "613463",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "70432161",
+            "nombres": "EMILIO",
+            "ape1": "SANCHEZ",
+            "ape2": "GONZALES",
+            "fecha_nacimiento": "01 08 1995",
+            "sexo": "M",
+            "ubigeo": "305906",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "69620625",
+            "nombres": "ALEJANDRO",
+            "ape1": "SANCHEZ",
+            "ape2": "PEREZ",
+            "fecha_nacimiento": "19 03 2020",
+            "sexo": "F",
+            "ubigeo": "305906",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "90348732",
+            "nombres": "MATIAS",
+            "ape1": "RAMOS",
+            "ape2": "SALAZAR",
+            "fecha_nacimiento": "20 08 1997",
+            "sexo": "M",
+            "ubigeo": "983458",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "40257609",
+            "nombres": "EMILIO",
+            "ape1": "RAMOS",
+            "ape2": "REYES",
+            "fecha_nacimiento": "03 05 2021",
+            "sexo": "F",
+            "ubigeo": "983458",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "89152352",
+            "nombres": "MARIANA",
+            "ape1": "VEGA",
+            "ape2": "PEREZ",
+            "fecha_nacimiento": "18 09 1983",
+            "sexo": "M",
+            "ubigeo": "906849",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "73611476",
+            "nombres": "PAULA",
+            "ape1": "VEGA",
+            "ape2": "MORALES",
+            "fecha_nacimiento": "09 08 2011",
+            "sexo": "F",
+            "ubigeo": "906849",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "27510469",
+            "nombres": "ARTURO",
+            "ape1": "GONZALES",
+            "ape2": "MENDOZA",
+            "fecha_nacimiento": "22 06 1984",
+            "sexo": "M",
+            "ubigeo": "187447",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "90239915",
+            "nombres": "JORGE",
+            "ape1": "GONZALES",
+            "ape2": "ROMERO",
+            "fecha_nacimiento": "22 11 2014",
+            "sexo": "F",
+            "ubigeo": "187447",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "76901991",
+            "nombres": "MARTIN",
+            "ape1": "GARCIA",
+            "ape2": "ORTEGA",
+            "fecha_nacimiento": "09 09 2003",
+            "sexo": "M",
+            "ubigeo": "289347",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "80954700",
+            "nombres": "JOSE",
+            "ape1": "GARCIA",
+            "ape2": "FERNANDEZ",
+            "fecha_nacimiento": "06 09 2015",
+            "sexo": "M",
+            "ubigeo": "289347",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "59895611",
+            "nombres": "MIGUEL",
+            "ape1": "DELGADO",
+            "ape2": "REYES",
+            "fecha_nacimiento": "05 10 1970",
+            "sexo": "M",
+            "ubigeo": "828856",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "42547521",
+            "nombres": "MARTIN",
+            "ape1": "DELGADO",
+            "ape2": "GONZALES",
+            "fecha_nacimiento": "14 08 2020",
+            "sexo": "M",
+            "ubigeo": "828856",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "23909181",
+            "nombres": "ALONSO",
+            "ape1": "MEDINA",
+            "ape2": "PINTO",
+            "fecha_nacimiento": "30 01 1990",
+            "sexo": "M",
+            "ubigeo": "537816",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "98948211",
+            "nombres": "ENRIQUE",
+            "ape1": "MEDINA",
+            "ape2": "GONZALES",
+            "fecha_nacimiento": "11 10 2015",
+            "sexo": "F",
+            "ubigeo": "537816",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "61025468",
+            "nombres": "PAULA",
+            "ape1": "GARCIA",
+            "ape2": "RAMOS",
+            "fecha_nacimiento": "10 02 2000",
+            "sexo": "M",
+            "ubigeo": "811676",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "60475701",
+            "nombres": "PEDRO",
+            "ape1": "GARCIA",
+            "ape2": "GUTIERREZ",
+            "fecha_nacimiento": "12 12 2009",
+            "sexo": "F",
+            "ubigeo": "811676",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "62146785",
+            "nombres": "YEISON",
+            "ape1": "CONDORI",
+            "ape2": "RAMOS",
+            "fecha_nacimiento": "06 11 1974",
+            "sexo": "M",
+            "ubigeo": "165659",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "53522099",
+            "nombres": "ENRIQUE",
+            "ape1": "CONDORI",
+            "ape2": "PINTO",
+            "fecha_nacimiento": "01 03 2013",
+            "sexo": "M",
+            "ubigeo": "165659",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "15420761",
+            "nombres": "LUCIA",
+            "ape1": "NUNEZ",
+            "ape2": "PAREDES",
+            "fecha_nacimiento": "14 07 1971",
+            "sexo": "M",
+            "ubigeo": "234715",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "60215778",
+            "nombres": "RICARDO",
+            "ape1": "NUNEZ",
+            "ape2": "TORRES",
+            "fecha_nacimiento": "24 10 2013",
+            "sexo": "M",
+            "ubigeo": "234715",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "70890093",
+            "nombres": "LUCAS",
+            "ape1": "MENDOZA",
+            "ape2": "HUAMAN",
+            "fecha_nacimiento": "06 02 1993",
+            "sexo": "M",
+            "ubigeo": "419559",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "40792392",
+            "nombres": "ALONSO",
+            "ape1": "MENDOZA",
+            "ape2": "REYES",
+            "fecha_nacimiento": "02 06 2008",
+            "sexo": "M",
+            "ubigeo": "419559",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "21157696",
+            "nombres": "FERNANDA",
+            "ape1": "HUAMAN",
+            "ape2": "ORTIZ",
+            "fecha_nacimiento": "24 01 1975",
+            "sexo": "M",
+            "ubigeo": "135776",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "12275866",
+            "nombres": "ENRIQUE",
+            "ape1": "HUAMAN",
+            "ape2": "PEREZ",
+            "fecha_nacimiento": "20 04 2019",
+            "sexo": "M",
+            "ubigeo": "135776",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "38019267",
+            "nombres": "SEBASTIAN",
+            "ape1": "VILLANUEVA",
+            "ape2": "RODRIGUEZ",
+            "fecha_nacimiento": "26 02 1955",
+            "sexo": "M",
+            "ubigeo": "874400",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "10940080",
+            "nombres": "JOSE",
+            "ape1": "VILLANUEVA",
+            "ape2": "SILVA",
+            "fecha_nacimiento": "01 09 2008",
+            "sexo": "M",
+            "ubigeo": "874400",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "82549160",
+            "nombres": "MIGUEL",
+            "ape1": "PINTO",
+            "ape2": "FLORES",
+            "fecha_nacimiento": "10 01 2000",
+            "sexo": "M",
+            "ubigeo": "227554",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "96968393",
+            "nombres": "LUCIA",
+            "ape1": "PINTO",
+            "ape2": "PAREDES",
+            "fecha_nacimiento": "24 04 2008",
+            "sexo": "F",
+            "ubigeo": "227554",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "60504556",
+            "nombres": "MIGUEL",
+            "ape1": "VEGA",
+            "ape2": "VILLANUEVA",
+            "fecha_nacimiento": "10 04 1960",
+            "sexo": "M",
+            "ubigeo": "308225",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "13622662",
+            "nombres": "PAULA",
+            "ape1": "VEGA",
+            "ape2": "MORALES",
+            "fecha_nacimiento": "30 11 2009",
+            "sexo": "F",
+            "ubigeo": "308225",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "36706976",
+            "nombres": "CARMEN",
+            "ape1": "CRUZ",
+            "ape2": "HUANCA",
+            "fecha_nacimiento": "02 03 1957",
+            "sexo": "M",
+            "ubigeo": "870709",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "29013204",
+            "nombres": "EDUARDO",
+            "ape1": "CRUZ",
+            "ape2": "CORDOVA",
+            "fecha_nacimiento": "07 07 2022",
+            "sexo": "M",
+            "ubigeo": "870709",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "66938887",
+            "nombres": "MIGUEL",
+            "ape1": "ROMERO",
+            "ape2": "DIAZ",
+            "fecha_nacimiento": "30 04 1984",
+            "sexo": "M",
+            "ubigeo": "526162",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "84097334",
+            "nombres": "ANDREA",
+            "ape1": "ROMERO",
+            "ape2": "VEGA",
+            "fecha_nacimiento": "22 08 2020",
+            "sexo": "M",
+            "ubigeo": "526162",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "14944990",
+            "nombres": "PEDRO",
+            "ape1": "SANCHEZ",
+            "ape2": "PINTO",
+            "fecha_nacimiento": "05 04 1992",
+            "sexo": "M",
+            "ubigeo": "226416",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "15595062",
+            "nombres": "EDUARDO",
+            "ape1": "SANCHEZ",
+            "ape2": "VEGA",
+            "fecha_nacimiento": "03 08 2015",
+            "sexo": "M",
+            "ubigeo": "226416",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "20983656",
+            "nombres": "JOSE",
+            "ape1": "ORTIZ",
+            "ape2": "GIBU",
+            "fecha_nacimiento": "12 04 1956",
+            "sexo": "M",
+            "ubigeo": "301450",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "55522038",
+            "nombres": "JOAQUIN",
+            "ape1": "ORTIZ",
+            "ape2": "VILLANUEVA",
+            "fecha_nacimiento": "28 04 2021",
+            "sexo": "F",
+            "ubigeo": "301450",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "55376975",
+            "nombres": "LUCAS",
+            "ape1": "CABRERA",
+            "ape2": "MORALES",
+            "fecha_nacimiento": "18 05 1997",
+            "sexo": "M",
+            "ubigeo": "221666",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "90756013",
+            "nombres": "DIEGO",
+            "ape1": "CABRERA",
+            "ape2": "QUISPE",
+            "fecha_nacimiento": "21 06 2010",
+            "sexo": "F",
+            "ubigeo": "221666",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "88277102",
+            "nombres": "EMILIO",
+            "ape1": "TORRES",
+            "ape2": "VILLANUEVA",
+            "fecha_nacimiento": "11 02 1999",
+            "sexo": "M",
+            "ubigeo": "746742",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "22736815",
+            "nombres": "RODRIGO",
+            "ape1": "TORRES",
+            "ape2": "ESPINOZA",
+            "fecha_nacimiento": "10 06 2011",
+            "sexo": "F",
+            "ubigeo": "746742",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "56660792",
+            "nombres": "YEISON",
+            "ape1": "CASTILLO",
+            "ape2": "QUISPE",
+            "fecha_nacimiento": "10 12 1996",
+            "sexo": "M",
+            "ubigeo": "297049",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "33081283",
+            "nombres": "MATIAS",
+            "ape1": "CASTILLO",
+            "ape2": "ESPINOZA",
+            "fecha_nacimiento": "04 03 2014",
+            "sexo": "M",
+            "ubigeo": "297049",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "40105971",
+            "nombres": "ROSA",
+            "ape1": "RODRIGUEZ",
+            "ape2": "TORRES",
+            "fecha_nacimiento": "05 02 2004",
+            "sexo": "M",
+            "ubigeo": "155721",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "88022362",
+            "nombres": "RICARDO",
+            "ape1": "RODRIGUEZ",
+            "ape2": "CABRERA",
+            "fecha_nacimiento": "01 05 2009",
+            "sexo": "F",
+            "ubigeo": "155721",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "83571911",
+            "nombres": "RAUL",
+            "ape1": "HUANCA",
+            "ape2": "ESPINOZA",
+            "fecha_nacimiento": "24 04 1976",
+            "sexo": "M",
+            "ubigeo": "984154",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "53976438",
+            "nombres": "VICTOR",
+            "ape1": "HUANCA",
+            "ape2": "QUISPE",
+            "fecha_nacimiento": "21 03 2010",
+            "sexo": "F",
+            "ubigeo": "984154",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "10529951",
+            "nombres": "VALERIA",
+            "ape1": "PAREDES",
+            "ape2": "PEREZ",
+            "fecha_nacimiento": "13 08 2004",
+            "sexo": "M",
+            "ubigeo": "824717",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "44812619",
+            "nombres": "FERNANDA",
+            "ape1": "PAREDES",
+            "ape2": "CHAVEZ",
+            "fecha_nacimiento": "25 05 2012",
+            "sexo": "M",
+            "ubigeo": "824717",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "40111310",
+            "nombres": "DANIELA",
+            "ape1": "FERNANDEZ",
+            "ape2": "ORTEGA",
+            "fecha_nacimiento": "18 01 1972",
+            "sexo": "M",
+            "ubigeo": "373900",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "12832538",
+            "nombres": "LUCAS",
+            "ape1": "FERNANDEZ",
+            "ape2": "MEDINA",
+            "fecha_nacimiento": "10 11 2019",
+            "sexo": "M",
+            "ubigeo": "373900",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "51895437",
+            "nombres": "SOFIA",
+            "ape1": "RUIZ",
+            "ape2": "VARGAS",
+            "fecha_nacimiento": "31 03 1999",
+            "sexo": "M",
+            "ubigeo": "186616",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "60593287",
+            "nombres": "MARIANA",
+            "ape1": "RUIZ",
+            "ape2": "VILLANUEVA",
+            "fecha_nacimiento": "09 10 2017",
+            "sexo": "M",
+            "ubigeo": "186616",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "98018561",
+            "nombres": "MARIANA",
+            "ape1": "MEDINA",
+            "ape2": "CASTRO",
+            "fecha_nacimiento": "02 09 1950",
+            "sexo": "M",
+            "ubigeo": "214228",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "50520675",
+            "nombres": "ALEJANDRO",
+            "ape1": "MEDINA",
+            "ape2": "RODRIGUEZ",
+            "fecha_nacimiento": "19 03 2010",
+            "sexo": "M",
+            "ubigeo": "214228",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "76613670",
+            "nombres": "LUIS",
+            "ape1": "MOSTO",
+            "ape2": "ROMERO",
+            "fecha_nacimiento": "30 09 1986",
+            "sexo": "M",
+            "ubigeo": "985548",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "38322656",
+            "nombres": "ISABELLA",
+            "ape1": "MOSTO",
+            "ape2": "QUISPE",
+            "fecha_nacimiento": "23 05 2014",
+            "sexo": "F",
+            "ubigeo": "985548",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "80223377",
+            "nombres": "ALONSO",
+            "ape1": "ESPINOZA",
+            "ape2": "MORALES",
+            "fecha_nacimiento": "03 06 2000",
+            "sexo": "M",
+            "ubigeo": "826208",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "28365483",
+            "nombres": "GABRIEL",
+            "ape1": "ESPINOZA",
+            "ape2": "CORDOVA",
+            "fecha_nacimiento": "12 09 2017",
+            "sexo": "M",
+            "ubigeo": "826208",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "50390388",
+            "nombres": "ANA",
+            "ape1": "HUAMAN",
+            "ape2": "RODRIGUEZ",
+            "fecha_nacimiento": "14 02 1961",
+            "sexo": "M",
+            "ubigeo": "313490",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "99527506",
+            "nombres": "LUCIA",
+            "ape1": "HUAMAN",
+            "ape2": "ROMERO",
+            "fecha_nacimiento": "08 06 2012",
+            "sexo": "F",
+            "ubigeo": "313490",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "21451407",
+            "nombres": "PEDRO",
+            "ape1": "CORDOVA",
+            "ape2": "HUAMAN",
+            "fecha_nacimiento": "31 10 1954",
+            "sexo": "M",
+            "ubigeo": "133920",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "14310173",
+            "nombres": "RAUL",
+            "ape1": "CORDOVA",
+            "ape2": "SILVA",
+            "fecha_nacimiento": "15 03 2021",
+            "sexo": "M",
+            "ubigeo": "133920",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "41354493",
+            "nombres": "RODRIGO",
+            "ape1": "ROJAS",
+            "ape2": "GARCIA",
+            "fecha_nacimiento": "05 06 1999",
+            "sexo": "M",
+            "ubigeo": "772726",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "14611341",
+            "nombres": "ENRIQUE",
+            "ape1": "ROJAS",
+            "ape2": "SALAZAR",
+            "fecha_nacimiento": "14 11 2020",
+            "sexo": "F",
+            "ubigeo": "772726",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "14443007",
+            "nombres": "DANIEL",
+            "ape1": "ESPINOZA",
+            "ape2": "QUISPE",
+            "fecha_nacimiento": "14 12 1954",
+            "sexo": "M",
+            "ubigeo": "787477",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "55159105",
+            "nombres": "YEISON",
+            "ape1": "ESPINOZA",
+            "ape2": "SALAZAR",
+            "fecha_nacimiento": "08 01 2024",
+            "sexo": "M",
+            "ubigeo": "787477",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "81508083",
+            "nombres": "JULIA",
+            "ape1": "PEREZ",
+            "ape2": "FLORES",
+            "fecha_nacimiento": "27 10 1971",
+            "sexo": "M",
+            "ubigeo": "562626",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "11430125",
+            "nombres": "PAULA",
+            "ape1": "PEREZ",
+            "ape2": "SANCHEZ",
+            "fecha_nacimiento": "30 10 2010",
+            "sexo": "F",
+            "ubigeo": "562626",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "51359489",
+            "nombres": "PAULA",
+            "ape1": "RIVERA",
+            "ape2": "RAMIREZ",
+            "fecha_nacimiento": "24 04 2002",
+            "sexo": "M",
+            "ubigeo": "840962",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "77935438",
+            "nombres": "ENRIQUE",
+            "ape1": "RIVERA",
+            "ape2": "MEDINA",
+            "fecha_nacimiento": "19 03 2014",
+            "sexo": "F",
+            "ubigeo": "840962",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "41244529",
+            "nombres": "YEISON",
+            "ape1": "DIAZ",
+            "ape2": "ALVAREZ",
+            "fecha_nacimiento": "08 10 1972",
+            "sexo": "M",
+            "ubigeo": "290750",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "69293765",
+            "nombres": "PEDRO",
+            "ape1": "DIAZ",
+            "ape2": "GARCIA",
+            "fecha_nacimiento": "22 05 2020",
+            "sexo": "M",
+            "ubigeo": "290750",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "29175896",
+            "nombres": "DIEGO",
+            "ape1": "DIAZ",
+            "ape2": "GUTIERREZ",
+            "fecha_nacimiento": "01 06 1971",
+            "sexo": "M",
+            "ubigeo": "583398",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "42727307",
+            "nombres": "GABRIEL",
+            "ape1": "DIAZ",
+            "ape2": "PAREDES",
+            "fecha_nacimiento": "28 12 2016",
+            "sexo": "F",
+            "ubigeo": "583398",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "40289256",
+            "nombres": "ANDREA",
+            "ape1": "CHAVEZ",
+            "ape2": "PAREDES",
+            "fecha_nacimiento": "12 09 1975",
+            "sexo": "M",
+            "ubigeo": "275601",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "95425581",
+            "nombres": "JULIA",
+            "ape1": "CHAVEZ",
+            "ape2": "RIVERA",
+            "fecha_nacimiento": "04 01 2024",
+            "sexo": "F",
+            "ubigeo": "275601",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "67109871",
+            "nombres": "MARIANA",
+            "ape1": "QUISPE",
+            "ape2": "PERALTA",
+            "fecha_nacimiento": "26 04 1965",
+            "sexo": "M",
+            "ubigeo": "943184",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "43856590",
+            "nombres": "PEDRO",
+            "ape1": "QUISPE",
+            "ape2": "GUTIERREZ",
+            "fecha_nacimiento": "23 09 2013",
+            "sexo": "M",
+            "ubigeo": "943184",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "74460410",
+            "nombres": "LEONARDO",
+            "ape1": "CASTILLO",
+            "ape2": "GIBU",
+            "fecha_nacimiento": "06 05 1962",
+            "sexo": "M",
+            "ubigeo": "893011",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "15632003",
+            "nombres": "PEDRO",
+            "ape1": "CASTILLO",
+            "ape2": "SANCHEZ",
+            "fecha_nacimiento": "14 09 2019",
+            "sexo": "M",
+            "ubigeo": "893011",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "32512016",
+            "nombres": "FERNANDA",
+            "ape1": "CRUZ",
+            "ape2": "ORTEGA",
+            "fecha_nacimiento": "12 11 1962",
+            "sexo": "M",
+            "ubigeo": "664772",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "24364581",
+            "nombres": "RAUL",
+            "ape1": "CRUZ",
+            "ape2": "FERNANDEZ",
+            "fecha_nacimiento": "16 01 2012",
+            "sexo": "F",
+            "ubigeo": "664772",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "61778926",
+            "nombres": "DIEGO",
+            "ape1": "RUIZ",
+            "ape2": "GIBU",
+            "fecha_nacimiento": "30 03 1997",
+            "sexo": "M",
+            "ubigeo": "391118",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "65485770",
+            "nombres": "CAMILA",
+            "ape1": "RUIZ",
+            "ape2": "RAMIREZ",
+            "fecha_nacimiento": "25 05 2023",
+            "sexo": "F",
+            "ubigeo": "391118",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "47605312",
+            "nombres": "VALERIA",
+            "ape1": "HUANCA",
+            "ape2": "HUAMAN",
+            "fecha_nacimiento": "16 09 1960",
+            "sexo": "M",
+            "ubigeo": "924470",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "36837250",
+            "nombres": "MANUEL",
+            "ape1": "HUANCA",
+            "ape2": "MENDOZA",
+            "fecha_nacimiento": "29 07 2012",
+            "sexo": "M",
+            "ubigeo": "924470",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "39276700",
+            "nombres": "MANUEL",
+            "ape1": "GARCIA",
+            "ape2": "SALAZAR",
+            "fecha_nacimiento": "25 08 1992",
+            "sexo": "M",
+            "ubigeo": "154286",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "60423886",
+            "nombres": "FERNANDA",
+            "ape1": "GARCIA",
+            "ape2": "SILVA",
+            "fecha_nacimiento": "01 07 2009",
+            "sexo": "M",
+            "ubigeo": "154286",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "66170859",
+            "nombres": "EMILIO",
+            "ape1": "GOMEZ",
+            "ape2": "FLORES",
+            "fecha_nacimiento": "13 12 1951",
+            "sexo": "M",
+            "ubigeo": "816966",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "13057944",
+            "nombres": "ANDREA",
+            "ape1": "GOMEZ",
+            "ape2": "GARCIA",
+            "fecha_nacimiento": "08 06 2008",
+            "sexo": "F",
+            "ubigeo": "816966",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "64175145",
+            "nombres": "LEONARDO",
+            "ape1": "RODRIGUEZ",
+            "ape2": "QUISPE",
+            "fecha_nacimiento": "19 03 1961",
+            "sexo": "M",
+            "ubigeo": "337160",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "23164711",
+            "nombres": "ALONSO",
+            "ape1": "RODRIGUEZ",
+            "ape2": "PERALTA",
+            "fecha_nacimiento": "28 11 2019",
+            "sexo": "M",
+            "ubigeo": "337160",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "83820262",
+            "nombres": "MIGUEL",
+            "ape1": "RAMOS",
+            "ape2": "DELGADO",
+            "fecha_nacimiento": "13 12 2001",
+            "sexo": "M",
+            "ubigeo": "673747",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "79721079",
+            "nombres": "ALBERTO",
+            "ape1": "RAMOS",
+            "ape2": "HUANCA",
+            "fecha_nacimiento": "11 06 2019",
+            "sexo": "M",
+            "ubigeo": "673747",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "37375397",
+            "nombres": "PEDRO",
+            "ape1": "CONDORI",
+            "ape2": "RAMOS",
+            "fecha_nacimiento": "10 06 1984",
+            "sexo": "M",
+            "ubigeo": "640561",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "16060990",
+            "nombres": "VALERIA",
+            "ape1": "CONDORI",
+            "ape2": "CASTILLO",
+            "fecha_nacimiento": "29 12 2022",
+            "sexo": "F",
+            "ubigeo": "640561",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "16119874",
+            "nombres": "YEISON",
+            "ape1": "DIAZ",
+            "ape2": "CORDOVA",
+            "fecha_nacimiento": "30 01 1996",
+            "sexo": "M",
+            "ubigeo": "785195",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "41145885",
+            "nombres": "MIGUEL",
+            "ape1": "DIAZ",
+            "ape2": "DIAZ",
+            "fecha_nacimiento": "03 09 2014",
+            "sexo": "M",
+            "ubigeo": "785195",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "99401668",
+            "nombres": "RAUL",
+            "ape1": "AGUILAR",
+            "ape2": "MAMANI",
+            "fecha_nacimiento": "26 10 1977",
+            "sexo": "M",
+            "ubigeo": "948617",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "44548700",
+            "nombres": "ANGEL",
+            "ape1": "AGUILAR",
+            "ape2": "NUNEZ",
+            "fecha_nacimiento": "30 04 2010",
+            "sexo": "M",
+            "ubigeo": "948617",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "11782264",
+            "nombres": "CAMILA",
+            "ape1": "PINTO",
+            "ape2": "NUNEZ",
+            "fecha_nacimiento": "24 12 1995",
+            "sexo": "M",
+            "ubigeo": "656731",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "26883565",
+            "nombres": "JOAQUIN",
+            "ape1": "PINTO",
+            "ape2": "TORRES",
+            "fecha_nacimiento": "06 05 2021",
+            "sexo": "M",
+            "ubigeo": "656731",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "96640446",
+            "nombres": "LUIS",
+            "ape1": "CONDORI",
+            "ape2": "VEGA",
+            "fecha_nacimiento": "23 08 1979",
+            "sexo": "M",
+            "ubigeo": "899631",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "34823727",
+            "nombres": "MATIAS",
+            "ape1": "CONDORI",
+            "ape2": "CONDORI",
+            "fecha_nacimiento": "09 04 2023",
+            "sexo": "F",
+            "ubigeo": "899631",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "85259883",
+            "nombres": "MATEO",
+            "ape1": "CASTRO",
+            "ape2": "PINTO",
+            "fecha_nacimiento": "23 08 2005",
+            "sexo": "M",
+            "ubigeo": "607096",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "93927023",
+            "nombres": "DANIELA",
+            "ape1": "CASTRO",
+            "ape2": "RODRIGUEZ",
+            "fecha_nacimiento": "10 03 2015",
+            "sexo": "M",
+            "ubigeo": "607096",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "65465845",
+            "nombres": "FERNANDA",
+            "ape1": "GOMEZ",
+            "ape2": "MORALES",
+            "fecha_nacimiento": "10 10 1972",
+            "sexo": "M",
+            "ubigeo": "683614",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "60046638",
+            "nombres": "JOSE",
+            "ape1": "GOMEZ",
+            "ape2": "MOSTO",
+            "fecha_nacimiento": "26 07 2014",
+            "sexo": "M",
+            "ubigeo": "683614",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "68622330",
+            "nombres": "ROSA",
+            "ape1": "CABRERA",
+            "ape2": "MOSTO",
+            "fecha_nacimiento": "09 01 1968",
+            "sexo": "M",
+            "ubigeo": "439377",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "42162579",
+            "nombres": "RAUL",
+            "ape1": "CABRERA",
+            "ape2": "ROJAS",
+            "fecha_nacimiento": "01 02 2024",
+            "sexo": "F",
+            "ubigeo": "439377",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "77599244",
+            "nombres": "NICO",
+            "ape1": "SUAREZ",
+            "ape2": "GARCIA",
+            "fecha_nacimiento": "09 04 2001",
+            "sexo": "M",
+            "ubigeo": "219955",
+            "tipo_dni": "azul"
+        },
+        "menor": {
+            "dni": "33046401",
+            "nombres": "ANA",
+            "ape1": "SUAREZ",
+            "ape2": "ROJAS",
+            "fecha_nacimiento": "03 12 2013",
+            "sexo": "F",
+            "ubigeo": "219955",
+            "tipo_dni": "amarillo"
+        }
+    },
+    {
+        "adulto": {
+            "dni": "15459064",
+            "nombres": "ALBERTO",
+            "ape1": "PAREDES",
+            "ape2": "PAREDES",
+            "fecha_nacimiento": "13 02 1951",
+            "sexo": "M",
+            "ubigeo": "596929",
+            "tipo_dni": "electronico"
+        },
+        "menor": {
+            "dni": "44203449",
+            "nombres": "DANIELA",
+            "ape1": "PAREDES",
+            "ape2": "VEGA",
+            "fecha_nacimiento": "05 09 2019",
+            "sexo": "F",
+            "ubigeo": "596929",
+            "tipo_dni": "amarillo"
+        }
+    }
+]

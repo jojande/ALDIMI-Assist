@@ -11,3 +11,6 @@ langchain-core
 openai
 python-multipart
 python-dotenv
+pymongo
+scikit-learn
+easyocr
