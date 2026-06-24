@@ -1,61 +1,163 @@
+import os
+import re
+import numpy as np
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
 from langchain_community.chat_models import ChatOllama
 from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
-import os
 from dotenv import load_dotenv
 
 load_dotenv()
 
 class AldimiChatbot:
     def __init__(self):
-        # Configuramos Ollama con el modelo descargado localmente
-        # No requiere API Key, utiliza la URL local de Ollama
+        # Configuración de Ollama (IA Local)
+        # Timeout corto de 2 segundos para evitar retrasos si no está activo
         self.llm = ChatOllama(
             model=os.getenv("OLLAMA_MODEL", "llama3"),
-            base_url=os.getenv("OLLAMA_URL", "http://localhost:11434")
+            base_url=os.getenv("OLLAMA_URL", "http://localhost:11434"),
+            timeout=2.0
         )
         
         self.system_prompt = """
-        Eres el asistente virtual de ALDIMI, un albergue para niños. 
-        Tu objetivo es ayudar a voluntarios y padres de familia con información sobre el reglamento y cuidados.
-        
-        REGLAMENTO INTERNO (FAQs):
-        1. Horario de visitas: Lunes a Viernes de 10:00 AM a 4:00 PM.
-        2. Registro: Todos los visitantes deben registrarse en recepción con su DNI.
-        3. Higiene: Es obligatorio el uso de alcohol en gel al ingresar.
-        4. Donaciones: Se aceptan víveres no perecederos y ropa en buen estado.
-        
-        Además, debes estar atento a señales de riesgo psicosocial en los comentarios sobre la evolución de los niños.
-        Si detectas palabras de tristeza profunda, agresión o abandono, márcalo como alerta.
-        Responde siempre en ESPAÑOL.
+        Eres el asistente virtual de ALDIMI, un albergue que brinda alojamiento, alimentación y soporte emocional a niños con cáncer y sus familias.
+        Responde las preguntas de manera clara, amable, empática y en ESPAÑOL.
+        Utiliza el contexto provisto del reglamento para responder.
         """
+        
+        # Ruta de reglamento normativo de ALDIMI
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        self.reglamento_path = os.path.abspath(os.path.join(current_dir, "..", "datos", "nlp", "reglamento_aldimi.txt"))
+        self.corpus_paragraphs = []
+        self.vectorizer = None
+        self.corpus_tfidf = None
+        
+        self.load_knowledge_base()
 
-    def get_response(self, user_message, history=[]):
+    def load_knowledge_base(self):
+        """Carga y vectoriza los párrafos del reglamento de ALDIMI (Hito 7)."""
+        if not os.path.exists(self.reglamento_path):
+            print(f"Advertencia: No se encontró el reglamento en {self.reglamento_path}")
+            return
+            
+        try:
+            with open(self.reglamento_path, "r", encoding="utf-8") as f:
+                content = f.read()
+            self.corpus_paragraphs = [p.strip() for p in content.split("\n\n") if p.strip()]
+            
+            if self.corpus_paragraphs:
+                self.vectorizer = TfidfVectorizer()
+                self.corpus_tfidf = self.vectorizer.fit_transform(self.corpus_paragraphs)
+                print(f"Reglamento ALDIMI indexado para búsqueda semántica: {len(self.corpus_paragraphs)} párrafos.")
+        except Exception as e:
+            print(f"Error al indexar reglamento ALDIMI: {e}")
+
+    def retrieve_context(self, query: str):
+        """Busca el párrafo más relevante usando similitud del coseno sobre TF-IDF."""
+        if not self.corpus_paragraphs or self.vectorizer is None:
+            return None, 0.0
+            
+        try:
+            query_tfidf = self.vectorizer.transform([query])
+            similarities = cosine_similarity(query_tfidf, self.corpus_tfidf)[0]
+            best_idx = np.argmax(similarities)
+            best_score = similarities[best_idx]
+            return self.corpus_paragraphs[best_idx], best_score
+        except Exception as e:
+            print(f"Error en recuperación semántica: {e}")
+            return None, 0.0
+
+    def get_response(self, user_message: str, history=[]):
+        """
+        Genera la respuesta del chatbot por RAG (Búsqueda semántica + Ollama).
+        Cuenta con plan de contingencia offline.
+        """
+        # 1. Recuperación semántica
+        context, score = self.retrieve_context(user_message)
+        
+        # Umbral mínimo de coincidencia semántica
+        threshold = 0.15
+        if context is None or score < threshold:
+            return "Lo siento, como asistente inteligente de ALDIMI solo tengo información sobre nuestros protocolos institucionales, admisión, suministros, campañas y horarios. Por favor, formula una pregunta relacionada a nuestras políticas."
+
+        # 2. Generación aumentada por recuperación (RAG)
+        prompt_rag = f"""
+        Utiliza el siguiente fragmento de información oficial del reglamento para responder la pregunta del usuario. 
+        Si no encuentras la respuesta en el fragmento provisto, responde de forma neutra y cortés que no tienes información exacta sobre ello.
+
+        Fragmento del reglamento:
+        "{context}"
+
+        Pregunta: "{user_message}"
+        """
+        
         messages = [SystemMessage(content=self.system_prompt)]
         
-        # Agregar historial para manejo de contexto (RF-IAN-03)
+        # Inyectar historial de conversación (Manejo de Contexto - RF-IAN-03)
         for msg in history:
-            if msg['role'] == 'user':
-                messages.append(HumanMessage(content=msg['content']))
-            else:
-                messages.append(AIMessage(content=msg['content']))
-        
-        messages.append(HumanMessage(content=user_message))
+            role = msg.get('role')
+            content = msg.get('content')
+            if role == 'user':
+                messages.append(HumanMessage(content=content))
+            elif role in ['bot', 'assistant']:
+                messages.append(AIMessage(content=content))
+                
+        messages.append(HumanMessage(content=prompt_rag))
         
         try:
             response = self.llm.invoke(messages)
             return response.content
         except Exception as e:
-            return f"Error al conectar con Ollama: {str(e)}. Asegúrate de que Ollama esté corriendo y el modelo llama3 esté descargado."
+            # Fallback offline: devolver el contexto oficial directamente
+            print(f"Ollama no disponible ({e}). Fallback a búsqueda semántica pura.")
+            return f"{context} (Nota: Esta información es un extracto directo del reglamento oficial de ALDIMI)."
 
-    def analyze_sentiment(self, text):
+    def analyze_sentiment(self, text: str):
         """
-        Análisis simple de riesgo psicosocial (RF-IAN-04) usando Ollama.
+        Analiza el riesgo psicosocial del texto de forma híbrida:
+        Heurística de diccionario (TB) + Análisis cognitivo de Ollama (si está activo).
         """
-        prompt = f"Analiza si el siguiente texto sobre un niño indica un riesgo psicosocial (tristeza, agresión, abandono). Responde solo con la palabra 'ALERTA' o 'NORMAL': {text}"
+        texto_lower = text.lower()
+        
+        # Categorías del TB para riesgos psicosociales
+        categorias = {
+            "Ideación Suicida": ["mató", "mato", "matar", "morir", "suicid", "no seguir", "quitarse la vida", "fin a mi vida"],
+            "Tristeza / Depresión": ["lloró", "lloro", "llorar", "triste", "pena", "deprim", "lament", "sufriendo", "llorando"],
+            "Aislamiento": ["encerrado", "encerro", "rechazó", "rechazo", "no participó", "no habla", "solo", "aislado"],
+            "Alimentación": ["no comió", "no comio", "sin apetito", "rechazó comida", "no quiere comer"]
+        }
+        
+        indicadores = []
+        contador_otras_categorias = 0
+        ideacion_detectada = False
+        
+        for categoria, palabras in categorias.items():
+            for palabra in palabras:
+                if palabra in texto_lower:
+                    item = f"'{palabra}'"
+                    if item not in indicadores:
+                        indicadores.append(item)
+                        if categoria == "Ideación Suicida":
+                            ideacion_detectada = True
+                        else:
+                            contador_otras_categorias += 1
+
+        # Análisis cognitivo Ollama
+        ollama_alert = False
         try:
-            response = self.llm.invoke([HumanMessage(content=prompt)])
-            return response.content.strip().upper()
-        except:
-            return "NORMAL"
+            prompt_risk = f"Analiza si el siguiente reporte sobre la evolución de un niño indica un riesgo psicosocial (tristeza extrema, aislamiento, agresión, ideación suicida, abandono). Responde con la palabra 'ALERTA' o 'NORMAL': {text}"
+            response = self.llm.invoke([HumanMessage(content=prompt_risk)])
+            res_val = response.content.strip().upper()
+            if "ALERTA" in res_val:
+                ollama_alert = True
+                print("Alerta psicosocial detectada por análisis cognitivo de Ollama.")
+        except Exception as e:
+            print(f"Ollama no disponible para análisis de sentimiento ({e}).")
+
+        # Regla de decisión para alertas psicosociales (HU04 / RF-IAN-04)
+        if ideacion_detectada or contador_otras_categorias >= 2 or ollama_alert:
+            return "ALERTA"
+            
+        return "NORMAL"
 
 chatbot = AldimiChatbot()
