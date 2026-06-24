@@ -87,14 +87,21 @@ def generar_dataset_dni(ruta_plantilla, tipo_dni, datos, nombre_salida, ruta_car
         draw = ImageDraw.Draw(img)
         
         # Ajuste de fuentes
-        try:
-            font_datos = ImageFont.truetype("arial.ttf", 14)
-            font_dni = ImageFont.truetype("arialbd.ttf", 16)
-            font_mrz = ImageFont.truetype("cour.ttf", 16) # Courier para MRZ
-        except:
-            font_datos = ImageFont.load_default()
-            font_dni = ImageFont.load_default()
-            font_mrz = ImageFont.load_default()
+        def get_windows_font(font_name, size):
+            paths = [
+                os.path.join(os.environ.get("WINDIR", "C:\\Windows"), "Fonts", font_name),
+                font_name
+            ]
+            for p in paths:
+                try:
+                    return ImageFont.truetype(p, size)
+                except:
+                    continue
+            return ImageFont.load_default()
+
+        font_datos = get_windows_font("arial.ttf", 14)
+        font_dni = get_windows_font("arialbd.ttf", 16)
+        font_mrz = get_windows_font("cour.ttf", 16)
 
         coords = COORDENADAS[tipo_dni]
 

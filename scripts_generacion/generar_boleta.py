@@ -9,13 +9,22 @@ def crear_recibo_detallado(nombre_archivo, correlativo, nombre_donante, dni_dona
     img = Image.new('RGB', (ancho, alto), color=(255, 255, 255))
     draw = ImageDraw.Draw(img)
 
-    try:
-        font_titulo = ImageFont.truetype("arialbd.ttf", 22)
-        font_sub = ImageFont.truetype("arialbd.ttf", 16)
-        font_texto = ImageFont.truetype("arial.ttf", 14)
-        font_mano = ImageFont.truetype("courier.ttf", 16) 
-    except:
-        font_titulo = font_sub = font_texto = font_mano = ImageFont.load_default()
+    def get_windows_font(font_name, size):
+        paths = [
+            os.path.join(os.environ.get("WINDIR", "C:\\Windows"), "Fonts", font_name),
+            font_name
+        ]
+        for p in paths:
+            try:
+                return ImageFont.truetype(p, size)
+            except:
+                continue
+        return ImageFont.load_default()
+
+    font_titulo = get_windows_font("arialbd.ttf", 22)
+    font_sub = get_windows_font("arialbd.ttf", 16)
+    font_texto = get_windows_font("arial.ttf", 14)
+    font_mano = get_windows_font("courier.ttf", 16)
 
     # --- ESTRUCTURA VISUAL ---
     draw.rectangle([15, 15, 585, 835], outline="black", width=2)

@@ -120,7 +120,8 @@ async def upload_document(file: UploadFile = File(...), db: Session = Depends(ge
             "id": db_doc.id,
             "filename": file.filename,
             "doc_type": doc_type,
-            "extracted_text": raw_text
+            "extracted_text": raw_text,
+            "profile": profile
         }
         
     except Exception as e:

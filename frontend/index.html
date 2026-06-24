@@ -1,56 +1,115 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALDIMI Core AI - Panel de Control</title>
+    <title>ALDIMI-Assist - Panel de Control Inteligente</title>
+    <!-- Importar Google Font moderna -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <header>
-        <h1>ALDIMI Core AI</h1>
-        <p>Sistema de Gestión con IA para el Albergue</p>
+        <div class="header-content">
+            <div class="logo">🏥</div>
+            <div>
+                <h1>ALDIMI-Assist v3.0</h1>
+                <p>Sistema Inteligente de Soporte Integral para el Albergue Divina Misericordia</p>
+            </div>
+        </div>
     </header>
 
-    <main class="container">
-        <!-- Sección OCR -->
-        <section id="ocr-section" class="card">
-            <h2>Módulo de Visión (OCR)</h2>
+    <main class="grid-container">
+        <!-- Tarjeta 1: Visión OCR Estructurado -->
+        <section class="card panel" id="vision-panel">
+            <h2>Módulo de Visión Artificial (OCR)</h2>
+            <p class="panel-desc">Sube un DNI, Receta Médica o Recibo de Donación para clasificarlo con MobileNetV3 y extraer sus datos estructurados.</p>
+            
             <div class="upload-area">
-                <input type="file" id="fileInput" accept="image/*">
-                <button onclick="uploadDocument()" id="uploadBtn">Cargar y Procesar</button>
+                <label for="fileInput" class="custom-file-upload">
+                    <span id="uploadFileName">📁 Seleccionar Imagen</span>
+                </label>
+                <input type="file" id="fileInput" accept="image/*" onchange="previewImage(event)">
+                <div id="image-preview-container" style="display:none;">
+                    <img id="imagePreview" alt="Vista previa del documento">
+                </div>
+                <button onclick="uploadDocument()" id="uploadBtn">✨ Cargar y Procesar</button>
             </div>
+
+            <!-- Resultados del OCR -->
             <div id="ocr-result" class="result-area" style="display: none;">
-                <h3>Resultado del Procesamiento</h3>
-                <p><strong>Tipo de Documento:</strong> <span id="docType"></span></p>
+                <div class="result-header">
+                    <h3>Resultado del Procesamiento</h3>
+                    <span id="docTypeBadge" class="badge"></span>
+                </div>
+                
+                <!-- Campos Dinámicos Estructurados -->
+                <div id="structured-fields" class="structured-fields">
+                    <!-- Se llenarán con JS -->
+                </div>
+
                 <div class="text-box">
-                    <strong>Texto Extraído:</strong>
-                    <pre id="extractedText"></pre>
+                    <button class="accordion" onclick="toggleRawText()">Ver texto crudo extraído ▾</button>
+                    <pre id="extractedText" style="display:none;"></pre>
                 </div>
             </div>
         </section>
 
-        <!-- Sección Chatbot -->
-        <section id="chatbot-section" class="card">
-            <h2>Asistente Virtual ALDIMI</h2>
-            <div id="chat-window" class="chat-window">
-                <!-- Los mensajes aparecerán aquí -->
-                <div class="message bot">¡Hola! Soy el asistente de ALDIMI. ¿En qué puedo ayudarte hoy?</div>
+        <!-- Tarjeta 2: Bitácora de Observaciones -->
+        <section class="card panel" id="bitacora-panel">
+            <h2>Bitácora y Alertas Psicosociales</h2>
+            <p class="panel-desc">Registra las observaciones diarias del estado emocional y comportamiento del menor para auditoría de riesgos.</p>
+            
+            <div class="bitacora-input-area">
+                <textarea id="bitacoraInput" placeholder="Ej: El paciente estuvo muy triste en la tarde, lloró en su habitación y no quiso comer nada de almuerzo..." rows="6"></textarea>
+                <button onclick="analyzeBitacora()" id="analyzeBtn" class="btn-warning">🚨 Analizar Alerta Emocional</button>
             </div>
+
+            <!-- Panel de Alertas Psicosociales -->
+            <div id="psycho-result" class="result-area alert-container" style="display: none;">
+                <div class="alert-header">
+                    <span class="alert-icon" id="alertIcon">⚠️</span>
+                    <div>
+                        <h3 id="alertTitle">Nivel de Riesgo</h3>
+                        <p id="alertRecommendation"></p>
+                    </div>
+                </div>
+                <div id="alertIndicators" class="alert-indicators">
+                    <!-- Indicadores detectados -->
+                </div>
+                <button id="referBtn" class="btn-danger" style="display:none;" onclick="triggerReferral()">Derivar a Psicología Inmediatamente 🏥</button>
+            </div>
+        </section>
+
+        <!-- Tarjeta 3: Asistente Virtual -->
+        <section class="card panel chat-panel" id="chatbot-panel">
+            <h2>Asistente Virtual ALDIMI</h2>
+            <p class="panel-desc">Consulta protocolos de admisión, campañas, horarios y guías de cuidado del albergue mediante RAG semántico.</p>
+            
+            <div id="chat-window" class="chat-window">
+                <div class="message bot">¡Hola! Soy el asistente virtual de ALDIMI. ¿En qué puedo ayudarte hoy?</div>
+            </div>
+            
+            <!-- Sugerencias de preguntas -->
+            <div class="chat-suggestions">
+                <button onclick="sendSuggestedQuery('¿Cuáles son los horarios de visitas?')">🕒 Horarios de Visitas</button>
+                <button onclick="sendSuggestedQuery('¿Qué requisitos de admisión se necesitan?')">📋 Requisitos de Admisión</button>
+                <button onclick="sendSuggestedQuery('¿Qué suministros se necesitan?')">📦 Donaciones necesarias</button>
+            </div>
+
             <div class="chat-input">
-                <input type="text" id="chatInput" placeholder="Escribe tu consulta o reporte aquí...">
+                <input type="text" id="chatInput" placeholder="Escribe tu pregunta o reporte...">
                 <button onclick="sendMessage()">Enviar</button>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 ALDIMI Core AI - Inteligencia Artificial para el Impacto Social</p>
+        <p>&copy; 2026 ALDIMI-Assist v3.0 | Inteligencia Artificial para el Albergue Divina Misericordia</p>
     </footer>
 
     <script src="app.js"></script>
 </body>
-
 </html>

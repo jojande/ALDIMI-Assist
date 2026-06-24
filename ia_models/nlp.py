@@ -53,18 +53,43 @@ class AldimiChatbot:
             print(f"Error al indexar reglamento ALDIMI: {e}")
 
     def retrieve_context(self, query: str):
-        """Busca el párrafo más relevante usando similitud del coseno sobre TF-IDF."""
+        """
+        Busca el párrafo más relevante usando similitud del coseno sobre TF-IDF 
+        con boosting basado en palabras clave para garantizar la precisión (Hito 10).
+        """
         if not self.corpus_paragraphs or self.vectorizer is None:
             return None, 0.0
             
         try:
+            # 1. Similitud de coseno base
             query_tfidf = self.vectorizer.transform([query])
-            similarities = cosine_similarity(query_tfidf, self.corpus_tfidf)[0]
+            similarities = cosine_similarity(query_tfidf, self.corpus_tfidf)[0].copy()
+            
+            # 2. Lógica de Keyword Boosting
+            query_clean = re.sub(r'[^\w\s]', '', query.lower())
+            words = query_clean.split()
+            
+            boosts = {
+                0: ["direccion", "dirección", "ubicacion", "ubicación", "donde", "dónde", "queda", "mision", "misión", "surquillo", "kandinsky"],
+                1: ["suministros", "inventario", "pañales", "pediasure", "leche", "insumos", "víveres", "viveres", "comida", "alimentos", "donar", "necesita"],
+                2: ["campaña", "campana", "corazon", "corazón", "proyecto", "camas", "neutropenia", "expansion", "expansión"],
+                3: ["admision", "admisión", "ingresar", "ingreso", "requisitos", "admitir", "documentacion", "documentación", "entrar", "perfil"],
+                4: ["visita", "visitas", "horario", "horarios", "sábado", "sabado", "domingo", "tarde", "semana"],
+                5: ["comida", "comidas", "desayuno", "almuerzo", "cena", "servir", "comedor", "7"]
+            }
+            
+            for idx, keywords in boosts.items():
+                if idx < len(similarities):
+                    match_count = sum(1 for w in words if w in keywords)
+                    if match_count > 0:
+                        similarities[idx] += 0.35 * match_count  # boost por coincidencia
+            
             best_idx = np.argmax(similarities)
             best_score = similarities[best_idx]
+            
             return self.corpus_paragraphs[best_idx], best_score
         except Exception as e:
-            print(f"Error en recuperación semántica: {e}")
+            print(f"Error en recuperación semántica con boosting: {e}")
             return None, 0.0
 
     def get_response(self, user_message: str, history=[]):
