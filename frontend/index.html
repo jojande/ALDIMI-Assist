@@ -3,113 +3,358 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALDIMI-Assist - Panel de Control Inteligente</title>
-    <!-- Importar Google Font moderna -->
+    <title>ALDIMI - Albergue Divina Misericordia</title>
+    <meta name="description" content="Alojamiento gratuito, alimentación saludable y soporte emocional para niños con cáncer y sus familias de extrema pobreza en Lima.">
+    <!-- Importar Google Fonts: Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <!-- Estilos específicos de la Landing -->
+    <link rel="stylesheet" href="landing.css">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <div class="logo">🏥</div>
-            <div>
-                <h1>ALDIMI-Assist v3.0</h1>
-                <p>Sistema Inteligente de Soporte Integral para el Albergue Divina Misericordia</p>
-            </div>
+    <!-- Top Bar de Contacto Rápido -->
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <span class="contact-item">📞 994 144 204</span>
+            <span class="contact-item">✉️ secretaria1aldimi@gmail.com</span>
         </div>
+    </div>
+
+    <!-- Header Principal -->
+    <header class="main-header">
+        <nav class="nav-container">
+            <a href="#" class="nav-logo">
+                <!-- Logotipo Simulado con los Colores Oficiales -->
+                <div class="logo-icon">
+                    <span class="heart">❤️</span><span class="child">👤</span>
+                </div>
+                <div class="logo-text">
+                    <span class="brand-name">aldimi</span>
+                    <span class="brand-subtitle">ALBERGUE DIVINA MISERICORDIA</span>
+                </div>
+            </a>
+
+            <!-- Menú de Navegación -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio" class="active">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#proyecto">Nueva Casa</a></li>
+                <li><a href="#ayuda">Cómo Ayudar</a></li>
+                <li><a href="dashboard.html" class="intranet-btn">Intranet 🏥</a></li>
+            </ul>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
     </header>
 
-    <main class="grid-container">
-        <!-- Tarjeta 1: Visión OCR Estructurado -->
-        <section class="card panel" id="vision-panel">
-            <h2>Módulo de Visión Artificial (OCR)</h2>
-            <p class="panel-desc">Sube un DNI, Receta Médica o Recibo de Donación para clasificarlo con MobileNetV3 y extraer sus datos estructurados.</p>
-            
-            <div class="upload-area">
-                <label for="fileInput" class="custom-file-upload">
-                    <span id="uploadFileName">📁 Seleccionar Imagen</span>
-                </label>
-                <input type="file" id="fileInput" accept="image/*" onchange="previewImage(event)">
-                <div id="image-preview-container" style="display:none;">
-                    <img id="imagePreview" alt="Vista previa del documento">
-                </div>
-                <button onclick="uploadDocument()" id="uploadBtn">✨ Cargar y Procesar</button>
-            </div>
-
-            <!-- Resultados del OCR -->
-            <div id="ocr-result" class="result-area" style="display: none;">
-                <div class="result-header">
-                    <h3>Resultado del Procesamiento</h3>
-                    <span id="docTypeBadge" class="badge"></span>
-                </div>
-                
-                <!-- Campos Dinámicos Estructurados -->
-                <div id="structured-fields" class="structured-fields">
-                    <!-- Se llenarán con JS -->
-                </div>
-
-                <div class="text-box">
-                    <button class="accordion" onclick="toggleRawText()">Ver texto crudo extraído ▾</button>
-                    <pre id="extractedText" style="display:none;"></pre>
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="hero-badge">Bienvenidos al Albergue Divina Misericordia</span>
+                <h1>"Unidos por amor, comprometidos con la vida"</h1>
+                <p>Brindamos alojamiento seguro, alimentación completa y saludable, ropa, pasajes y soporte psicosocial de forma 100% gratuita a niños pacientes oncológicos en extrema pobreza y sus familias procedentes de diversas regiones del Perú.</p>
+                <div class="hero-ctas">
+                    <a href="#ayuda" class="btn btn-primary">Donar Ahora 🧡</a>
+                    <a href="#nosotros" class="btn btn-secondary">Conócenos Más</a>
                 </div>
             </div>
-        </section>
+            <div class="hero-visual">
+                <!-- Ilustración moderna en CSS o imagen placeholder -->
+                <div class="heart-shield-graphic">
+                    <div class="circle-pulse"></div>
+                    <span class="shield-icon">🏥</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- Tarjeta 2: Bitácora de Observaciones -->
-        <section class="card panel" id="bitacora-panel">
-            <h2>Bitácora y Alertas Psicosociales</h2>
-            <p class="panel-desc">Registra las observaciones diarias del estado emocional y comportamiento del menor para auditoría de riesgos.</p>
-            
-            <div class="bitacora-input-area">
-                <textarea id="bitacoraInput" placeholder="Ej: El paciente estuvo muy triste en la tarde, lloró en su habitación y no quiso comer nada de almuerzo..." rows="6"></textarea>
-                <button onclick="analyzeBitacora()" id="analyzeBtn" class="btn-warning">🚨 Analizar Alerta Emocional</button>
+    <!-- Sección de Estadísticas de Impacto -->
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-icon">🕒</div>
+                <div class="stat-number">+20 Años</div>
+                <div class="stat-label">Brindando amor y apoyo integral en la lucha contra el cáncer y la pobreza.</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🏥</div>
+                <div class="stat-number">100% Gratuito</div>
+                <div class="stat-label">Hospedaje, alimentación, útiles y acompañamiento para las familias.</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">👨‍👩‍👧‍👦</div>
+                <div class="stat-number">+1000 Familias</div>
+                <div class="stat-label">Acogidas y reconfortadas en su viaje médico desde las provincias.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Nosotros (Tabs Interactivos) -->
+    <section class="nosotros" id="nosotros">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Conócenos Más</h2>
+                <div class="line-divider"></div>
+                <p>Nuestra historia, misión y la junta que hace posible este milagro de amor todos los días.</p>
             </div>
 
-            <!-- Panel de Alertas Psicosociales -->
-            <div id="psycho-result" class="result-area alert-container" style="display: none;">
-                <div class="alert-header">
-                    <span class="alert-icon" id="alertIcon">⚠️</span>
-                    <div>
-                        <h3 id="alertTitle">Nivel de Riesgo</h3>
-                        <p id="alertRecommendation"></p>
+            <div class="nosotros-tabs-container">
+                <!-- Encabezados de Pestañas -->
+                <div class="tab-headers">
+                    <button class="tab-btn active" onclick="switchTab(event, 'historia')">Historia</button>
+                    <button class="tab-btn" onclick="switchTab(event, 'mision')">Misión</button>
+                    <button class="tab-btn" onclick="switchTab(event, 'vision')">Visión</button>
+                    <button class="tab-btn" onclick="switchTab(event, 'junta')">Junta Directiva</button>
+                </div>
+
+                <!-- Contenido de Pestañas -->
+                <div class="tab-contents">
+                    <!-- Historia -->
+                    <div class="tab-pane active" id="historia">
+                        <div class="pane-grid">
+                            <div class="pane-text">
+                                <h3>Nuestra Historia</h3>
+                                <p>Hace casi dos décadas, ALDIMI dio sus primeros pasos en la noble tarea de brindar apoyo a pacientes con cáncer. Inspirada por la experiencia de la Sra. Isabel Thérèse, presidenta y fundadora, quien laboraba como voluntaria en el Instituto Nacional de Enfermedades Neoplásicas (INEN).</p>
+                                <p>Durante su labor, presenció las necesidades apremiantes de familiares que venían de provincias sin un lugar seguro para dormir, comida o soporte. Fue así que nació la idea de establecer un albergue que brindara calor de hogar a estas personas, combatiendo simultáneamente el cáncer y la extrema pobreza.</p>
+                            </div>
+                            <div class="pane-graphic">📜</div>
+                        </div>
+                    </div>
+
+                    <!-- Misión -->
+                    <div class="tab-pane" id="mision">
+                        <div class="pane-grid">
+                            <div class="pane-text">
+                                <h3>Nuestra Misión</h3>
+                                <p class="highlight-text">"Acoger, cuidar, alimentar y brindar asistencia integral a los pacientes de cáncer que vienen a Lima desde provincias y se encuentran en extrema pobreza, para reconfortarlos en su lucha contra la enfermedad."</p>
+                                <p>Asimismo, gestionamos los recursos económicos y humanos necesarios para brindar una atención óptima, de calidad y digna a todos nuestros albergados.</p>
+                            </div>
+                            <div class="pane-graphic">🎯</div>
+                        </div>
+                    </div>
+
+                    <!-- Visión -->
+                    <div class="tab-pane" id="vision">
+                        <div class="pane-grid">
+                            <div class="pane-text">
+                                <h3>Nuestra Visión</h3>
+                                <p class="highlight-text">"Convertirnos en un albergue que cuente con una mayor infraestructura y capacidad adecuada para cubrir el exceso de demanda de pacientes oncológicos y las necesidades de los más vulnerables."</p>
+                                <p>Buscamos consolidar áreas asépticas para pacientes críticos (post-trasplante de médula) y dotar al albergue de un equipo interdisciplinario de profesionales voluntarios de la salud (física y psicológica) y técnicos especializados.</p>
+                            </div>
+                            <div class="pane-graphic">👁️</div>
+                        </div>
+                    </div>
+
+                    <!-- Junta Directiva -->
+                    <div class="tab-pane" id="junta">
+                        <div class="pane-grid">
+                            <div class="pane-text">
+                                <h3>Junta Directiva</h3>
+                                <ul class="directiva-list">
+                                    <li><strong>Sra. Isabel Thérèse</strong> - Presidenta y Fundadora</li>
+                                    <li><strong>Sra. Andrea Liliana Lavado Saldias de Nathals</strong> - Secretaria General</li>
+                                    <li><strong>Sr. Nilton Escobar Monzón</strong> - Secretario de Economía</li>
+                                    <li><strong>Srta. Pamela Nuñez Thérèse</strong> - Vocal</li>
+                                </ul>
+                                <p class="directiva-note">Respaldados por la solidaridad internacional y el esfuerzo incansable de la comunidad peruana.</p>
+                            </div>
+                            <div class="pane-graphic">👥</div>
+                        </div>
                     </div>
                 </div>
-                <div id="alertIndicators" class="alert-indicators">
-                    <!-- Indicadores detectados -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Proyecto Nueva Casa -->
+    <section class="proyecto" id="proyecto">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Proyecto: "Nueva Casa ALDIMI"</h2>
+                <div class="line-divider"></div>
+                <p>Estamos felices de compartir con ustedes la construcción de nuestro nuevo hogar, con ambientes adecuados para brindar a nuestros albergados la mejor oportunidad de reposo.</p>
+            </div>
+
+            <div class="proyecto-grid">
+                <div class="proyecto-card">
+                    <div class="p-icon">🦠</div>
+                    <h3>Áreas de Neutropenia</h3>
+                    <p>Creación de habitaciones asépticas dedicadas a pacientes que han recibido trasplante de médula ósea. Requieren un aislamiento estricto de 100 días sin contacto externo para su adaptación exitosa.</p>
                 </div>
-                <button id="referBtn" class="btn-danger" style="display:none;" onclick="triggerReferral()">Derivar a Psicología Inmediatamente 🏥</button>
+                <div class="proyecto-card">
+                    <div class="p-icon">🛌</div>
+                    <h3>Alojamiento Oncológico</h3>
+                    <p>Habitaciones completamente equipadas y seguras para el descanso de pacientes oncológicos de todas las edades (niños y adultos) y sus acompañantes durante todo su tratamiento.</p>
+                </div>
+                <div class="proyecto-card">
+                    <div class="p-icon">🤝</div>
+                    <h3>Compromiso Inquebrantable</h3>
+                    <p>Nuestra meta es firme: no permitiremos que ningún paciente abandone su tratamiento oncológico por falta de recursos económicos, transporte o alojamiento.</p>
+                </div>
+                <div class="proyecto-card">
+                    <div class="p-icon">🎒</div>
+                    <h3>Desarrollo Profesional</h3>
+                    <p>Diseño de espacios para que psicólogos, nutricionistas, enfermeras y docentes voluntarios brinden talleres y terapia a nuestros pacientes, impulsando su bienestar integral.</p>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Tarjeta 3: Asistente Virtual -->
-        <section class="card panel chat-panel" id="chatbot-panel">
-            <h2>Asistente Virtual ALDIMI</h2>
-            <p class="panel-desc">Consulta protocolos de admisión, campañas, horarios y guías de cuidado del albergue mediante RAG semántico.</p>
-            
-            <div id="chat-window" class="chat-window">
-                <div class="message bot">¡Hola! Soy el asistente virtual de ALDIMI. ¿En qué puedo ayudarte hoy?</div>
-            </div>
-            
-            <!-- Sugerencias de preguntas -->
-            <div class="chat-suggestions">
-                <button onclick="sendSuggestedQuery('¿Cuáles son los horarios de visitas?')">🕒 Horarios de Visitas</button>
-                <button onclick="sendSuggestedQuery('¿Qué requisitos de admisión se necesitan?')">📋 Requisitos de Admisión</button>
-                <button onclick="sendSuggestedQuery('¿Qué suministros se necesitan?')">📦 Donaciones necesarias</button>
+    <!-- Sección Cómo Ayudar (Donaciones) -->
+    <section class="ayuda" id="ayuda">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>¿Cómo Puedes Ayudar?</h2>
+                <div class="line-divider"></div>
+                <p>Tu generosidad es el motor que mantiene las puertas del albergue abiertas. Elige la forma que prefieras para colaborar.</p>
             </div>
 
-            <div class="chat-input">
-                <input type="text" id="chatInput" placeholder="Escribe tu pregunta o reporte...">
-                <button onclick="sendMessage()">Enviar</button>
-            </div>
-        </section>
-    </main>
+            <div class="ayuda-container">
+                <!-- Donación Económica -->
+                <div class="ayuda-card econ">
+                    <h3>💳 Donaciones Económicas</h3>
+                    <p class="card-desc">Con tu ayuda cubrimos agua, electricidad, gas, internet, reparaciones y mantenimiento en general.</p>
+                    
+                    <!-- Banco Cuentas -->
+                    <div class="bank-accounts">
+                        <h4>Depósito Directo (Interbank)</h4>
+                        <div class="account-item">
+                            <span class="acc-label">Soles Corriente:</span>
+                            <strong>Cta: 132-3000637338</strong>
+                            <span class="cci">CCI: 003-132-003000637338-82</span>
+                        </div>
+                        <div class="account-item">
+                            <span class="acc-label">Dólares Corriente:</span>
+                            <strong>Cta: 132-3000640931</strong>
+                            <span class="cci">CCI: 003-132-003000640931-89</span>
+                        </div>
+                    </div>
 
-    <footer>
-        <p>&copy; 2026 ALDIMI-Assist v3.0 | Inteligencia Artificial para el Albergue Divina Misericordia</p>
+                    <!-- Calculadora Interactiva de Donación -->
+                    <div class="donation-calculator">
+                        <h4>Impacto de tu Donación</h4>
+                        <div class="calc-presets">
+                            <button class="preset-btn active" data-amount="10">S/ 10</button>
+                            <button class="preset-btn" data-amount="50">S/ 50</button>
+                            <button class="preset-btn" data-amount="100">S/ 100</button>
+                            <button class="preset-btn" data-amount="200">S/ 200</button>
+                            <button class="preset-btn" data-amount="500">S/ 500</button>
+                        </div>
+                        <div class="calc-impact-display" id="calcImpactDisplay">
+                            🍲 Tu donación de <strong>S/ 10</strong> cubre **1 ración de alimentación nutritiva** para un niño albergado.
+                        </div>
+                        <a href="https://aldimi.pe/donar-ahora/" target="_blank" class="btn btn-accent btn-full" id="calcDonateBtn">Donar S/ 10 vía Mercado Pago</a>
+                    </div>
+                </div>
+
+                <!-- Donación en Especie y Voluntariado -->
+                <div class="ayuda-card especies">
+                    <h3>📦 Alimentos, Ropa y Voluntariado</h3>
+                    <p class="card-desc">Toda ayuda material y humana suma significativamente a la calidad de vida de las familias.</p>
+
+                    <div class="especie-grid">
+                        <div class="especie-item">
+                            <span class="e-item-icon">🍎</span>
+                            <div>
+                                <strong>Alimentos Nutritivos</strong>
+                                <p>Carne, pollo, huevos frescos, leche, verduras, legumbres, arroz, aceite y fideos.</p>
+                            </div>
+                        </div>
+                        <div class="especie-item">
+                            <span class="e-item-icon">👕</span>
+                            <div>
+                                <strong>Ropa y Aseo</strong>
+                                <p>Ropa en buen estado (especialmente abrigo) y artículos de higiene personal.</p>
+                            </div>
+                        </div>
+                        <div class="especie-item">
+                            <span class="e-item-icon">🎨</span>
+                            <div>
+                                <strong>Voluntariado y Apoyo</strong>
+                                <p>Talleres, soporte psicológico, actividades educativas o compañía presencial.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="coordinar-area">
+                        <p class="info-text">Para coordinar la entrega de donaciones en especie o registrarte como voluntario, comunícate directamente con nuestra administración:</p>
+                        <a href="https://wa.me/51994144204?text=Hola,%20quisiera%20coordinar%20una%20donación%20para%20el%20Albergue%20ALDIMI" target="_blank" class="btn btn-primary btn-whatsapp btn-full">
+                            💬 Coordinar Donación / Voluntariado
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer de la Landing -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="logo-icon-light"><span class="heart">❤️</span><span class="child">👤</span></div>
+                <h3>ALDIMI</h3>
+                <p>Albergue Divina Misericordia. Registrado como Organización Sin Fines de Lucro en el Perú.</p>
+            </div>
+            <div class="footer-contact">
+                <h4>Contacto</h4>
+                <p>📍 Calle Kandinsky # 236 – 238, Urb. Vipep, Surquillo, Lima, Perú</p>
+                <p>📞 994 144 204</p>
+                <p>✉️ secretaria1aldimi@gmail.com | qktherese@hotmail.com</p>
+            </div>
+            <div class="footer-links">
+                <h4>Acceso rápido</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#proyecto">Nueva Casa</a></li>
+                    <li><a href="#ayuda">Donar</a></li>
+                    <li><a href="dashboard.html" class="footer-intranet-link">Acceso Intranet (ALDIMI-Assist) 🔒</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ALDIMI. Unidos por amor, comprometidos con la vida. Todos los derechos reservados.</p>
+        </div>
     </footer>
 
-    <script src="app.js"></script>
+    <!-- Widget Flotante de Chatbot RAG -->
+    <div class="chat-widget" id="chatWidget">
+        <button class="chat-widget-toggle" id="chatWidgetToggle" aria-label="Abrir Chatbot de ayuda">
+            <span class="chat-badge" id="chatBadge">1</span>
+            <span class="chat-icon-bubble">💬</span>
+            <span class="chat-toggle-text">¿Dudas? Escríbenos</span>
+        </button>
+
+        <div class="chat-widget-box" id="chatWidgetBox">
+            <div class="chat-box-header">
+                <div class="chat-box-title">
+                    <span class="status-indicator"></span>
+                    <div>
+                        <h4>Asistente ALDIMI</h4>
+                        <span>En línea - RAG Activo</span>
+                    </div>
+                </div>
+                <button class="chat-box-close" id="chatBoxClose">&times;</button>
+            </div>
+            <div class="chat-box-messages" id="chatBoxMessages">
+                <div class="msg-bubble bot">
+                    ¡Hola! Soy el asistente virtual del Albergue ALDIMI. ¿Tienes preguntas sobre horarios de visita, requisitos de admisión, o cómo donar? Estoy aquí para ayudarte.
+                </div>
+            </div>
+            <div class="chat-box-input-area">
+                <input type="text" id="chatBoxInput" placeholder="Escribe tu consulta aquí..." onkeydown="handleChatKey(event)">
+                <button id="chatBoxSend" onclick="sendWidgetMessage()">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts de la Landing -->
+    <script src="landing.js"></script>
 </body>
 </html>
