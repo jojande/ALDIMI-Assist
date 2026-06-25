@@ -308,7 +308,7 @@ class ALDIMIOcrPipeline:
         for i in range(start_idx, len(raw_lines)):
             line = raw_lines[i].strip()
             l_u = line.upper()
-            if any(k in l_u for k in ["FIRMA", "SELLO", "DRA", "DR.", "CMP", "ATENCION", "ATENCIÓN", "EMERGENCIA"]):
+            if re.search(r'\b(DRA?|CMP|RNE|COP|FIRMA|SELLO|MEDICO|MÉDICO|ATENCION|ATENCIÓN|EMERGENCIA)\b', l_u):
                 break
             if line:
                 med_lines.append(line)
@@ -384,8 +384,61 @@ class ALDIMIOcrPipeline:
             line_u = line.upper()
             if "NOMBRE" in line_u or "RAZ" in line_u or "SOCIAL" in line_u:
                 donante_val = re.sub(r'(?i)(nombre/razón social|nombre/razon social|nombre|razón social|razon social)\s*:?\s*', '', line).strip()
-                if not donante_val and i + 1 < len(raw_lines):
-                    donante_val = raw_lines[i+1].strip()
+                if not donante_val:
+                    # Determinar dirección de lectura de EasyOCR (valores antes o después de etiquetas)
+                    values_before_labels = True # por defecto
+                    idx_fecha = -1
+                    idx_dni = -1
+                    for idx, l in enumerate(raw_lines):
+                        l_u = l.upper()
+                        if "FECHA" in l_u:
+                            idx_fecha = idx
+                        elif "DNI" in l_u or "RUC" in l_u:
+                            if "ALBERGUE" not in l_u and "20508493021" not in l_u:
+                                idx_dni = idx
+                                
+                    if idx_fecha != -1:
+                        if idx_fecha - 1 >= 0 and re.search(r'\d+[\/\-]\d+', raw_lines[idx_fecha - 1]):
+                            values_before_labels = True
+                        elif idx_fecha + 1 < len(raw_lines) and re.search(r'\d+[\/\-]\d+', raw_lines[idx_fecha + 1]):
+                            values_before_labels = False
+                    elif idx_dni != -1:
+                        if idx_dni - 1 >= 0 and re.search(r'\b\d{8,11}\b', raw_lines[idx_dni - 1]):
+                            values_before_labels = True
+                        elif idx_dni + 1 < len(raw_lines) and re.search(r'\b\d{8,11}\b', raw_lines[idx_dni + 1]):
+                            values_before_labels = False
+                            
+                    preferred_idx = i - 1 if values_before_labels else i + 1
+                    
+                    candidates = []
+                    if i - 1 >= 0:
+                        candidates.append((i - 1, raw_lines[i - 1].strip()))
+                    if i + 1 < len(raw_lines):
+                        candidates.append((i + 1, raw_lines[i + 1].strip()))
+                        
+                    valid_candidates = []
+                    for idx, cand in candidates:
+                        cand_u = cand.upper()
+                        if any(l_kw in cand_u for l_kw in ["NOMBRE", "RAZON", "SOCIAL", "DIRECCION", "DIRECCIÓN", "DIRECCIN", "DNI", "RUC", "FECHA"]):
+                            continue
+                        if re.search(r'\d+[\/\-]\d+', cand):
+                            continue
+                        if re.match(r'^\d+$', cand_u):
+                            continue
+                        valid_candidates.append((idx, cand))
+                        
+                    if valid_candidates:
+                        matched = [c for c in valid_candidates if c[0] == preferred_idx]
+                        if matched:
+                            donante_val = matched[0][1]
+                        else:
+                            # Elegir el que no tenga números (las direcciones suelen tener números de calle)
+                            no_digits = [c for c in valid_candidates if not re.search(r'\d', c[1])]
+                            if no_digits:
+                                donante_val = no_digits[0][1]
+                            else:
+                                donante_val = valid_candidates[0][1]
+                                
                 donante_val = re.split(r'(?i)\s+(dirección|direccion|direccin|dni|ruc)', donante_val)[0].strip()
                 donante_val = re.sub(r'^[\s_\-\.\,:]+|[\s_\-\.\,:]+$', '', donante_val).strip()
                 if "DIRECCION" not in donante_val.upper() and "DIRECCIÓN" not in donante_val.upper() and "DIRECCIN" not in donante_val.upper():
@@ -395,9 +448,10 @@ class ALDIMIOcrPipeline:
         if not data["donante"]:
             for line in raw_lines:
                 line_clean = re.sub(r'[^A-ZÁÉÍÓÚÑ\s]', '', line.upper()).strip()
-                if len(line_clean) > 8 and not any(kw in line_clean for kw in ["ALBERGUE", "DIVINA", "MISERICORDIA", "RUC", "LIMA", "PERU", "PERÚ", "DONACION", "DONACIÓN", "INFORMACION", "INFORMACIÓN", "DONANTE", "FECHA", "DIRECCION", "DIRECCIÓN", "DETALLES", "SUMINISTROS", "CANTIDAD", "VALORACION", "VALORACIÓN", "ESTIMADA", "METODO", "MÉTODO", "EFECTIVO", "TRANSFERENCIA", "FIRMA", "RECIBIDO"]):
-                    data["donante"] = line.strip()
-                    break
+                if len(line_clean) > 8 and not any(kw in line_clean for kw in ["ALBERGUE", "DIVINA", "MISERICORDIA", "RUC", "LIMA", "PERU", "PERÚ", "DONACION", "DONACIÓN", "INFORMACION", "INFORMACIÓN", "DONANTE", "FECHA", "DIRECCION", "DIRECCIÓN", "DETALLES", "SUMINISTROS", "CANTIDAD", "VALORACION", "VALORACIÓN", "ESTIMADA", "METODO", "MÉTODO", "EFECTIVO", "TRANSFERENCIA", "FIRMA", "RECIBIDO", "AVENIDA", "AV", "JIRON", "JIRÓN", "JR", "CALLE", "URB", "URBANIZACION", "URBANIZACIÓN", "PASAJE", "PJ", "CARRETERA"]):
+                    if not re.search(r'\d', line):
+                        data["donante"] = line.strip()
+                        break
                     
         # Valoración
         val_text = ""
